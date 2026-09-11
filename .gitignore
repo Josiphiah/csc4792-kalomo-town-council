@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Downloaded raw HTML / PDFs (large, regenerable from scripts)
+data/raw/**/*.html
+data/raw/**/*.pdf
