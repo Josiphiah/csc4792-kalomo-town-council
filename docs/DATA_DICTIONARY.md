@@ -44,14 +44,17 @@ renamed, or its meaning changes.
 | source_url | string | URL of the page the record was scraped from |
 | date_scraped | date (YYYY-MM-DD) | Date the record was collected |
 
-> Coverage note: the council's Departments and Civic Leaders pages did not
-> fully expose their content to indexed/automated retrieval (see
+> Coverage note: the council's Departments page did not fully expose its
+> content to indexed/automated retrieval (see
 > `data/raw/administrative_governance/source_pages_extract.txt`), so this
-> dataset documents the department names, the one ward councillor, and the
-> leadership/committee structure confirmed via news posts and cross-checked
-> national records, rather than a complete 20-ward councillor roster or
-> full department directory. Re-running `scrape_administrative_governance.py`
-> from an unrestricted connection would let this be completed.
+> dataset documents the 4 department names confirmed via news posts rather
+> than a full department directory. The Civic Leaders page had the same
+> issue but has since been resolved with a full manual capture (all 20
+> ward councillors, split across the district's 2 constituencies, plus the
+> Council Chairperson and Vice Council Chairperson - the latter also
+> serving as a ward councillor, a genuine dual role, not a duplicate row).
+> Re-running `scrape_administrative_governance.py` from an unrestricted
+> connection would let the Departments gap be completed the same way.
 
 ## db-unza26-csc4792-kalomo_town_council_development_plans.csv
 

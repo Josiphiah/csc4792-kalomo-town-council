@@ -48,6 +48,51 @@ text alone; the script should be re-run from an unrestricted connection to
 capture the complete list.
 
 ------------------------------------------------------------------
+UPDATE (full Civic Leaders roster, supplied by Nicholas from a direct
+browser view of https://www.kalomocouncil.gov.zm/?page_id=2871 on
+2026-09-11 - the JS-rendered tab content that indexed snapshots missed)
+------------------------------------------------------------------
+Council Chairperson: Coy Makaya (not tied to a single ward).
+Vice Council Chairperson: Valencia Simwale - also serves as the Naluja
+Ward Councillor (dual role, as pasted directly under the Chairperson
+line on the page, with no separate name given for a distinct Naluja
+entry).
+
+The page lists 20 ward councillors in total, split under two constituency
+headings exactly as seen live on the page - confirmed to add up to the
+district's known total of 20 wards (see district_profile notes above).
+
+DUNDUMWEZI CONSTITUENCY (8 wards, incl. Naluja above):
+  Naluja      - Valencia Simwale (also Vice Council Chairperson)
+  Mikata      - Vincent Hamukwala
+  Chamuka     - Patricia Simbeleko
+  Omba        - Willard Hamanjanji (pasted as "OMBA WARD"; possibly a
+                paste-truncation of "Boma Ward" given Kalomo's town
+                centre is locally called "the Boma" - kept as pasted
+                since not independently confirmed either way)
+  Bbilili     - Titus Siamafuwa
+  Kasukwe     - Joel Muleya
+  Chikanta    - Astone Malasha (ward name matches the Chikanta chiefdom
+                name - plausible, not double-counted as the chiefdom row)
+  Katanda     - Nkuyanda Malawo
+
+KALOMO CENTRAL CONSTITUENCY (12 wards):
+  Namwianga   - David Mutentwa
+  Kalonda     - Denny Moono
+  Chilesha    - Samson Muchimba
+  Chifusa     - Mason Munsanje
+  Nachikungu  - Munsaka Trouble
+  Sipatunyana - Howard Munsanje (ward name matches the Sipatunyana
+                chiefdom name - plausible, not double-counted)
+  Chawila     - Roy Sialubala
+  Siachitema  - Bukoka Milambo (ward name matches the Siachitema
+                chiefdom name - plausible, not double-counted)
+  Choonga     - Liberty Chifuwe
+  Mayoba      - Lewis Mantanyani
+  Simayakwe   - Miyoba Muloongo
+  Mwaata      - Sialwizi S. Madyenkuku (previously the only entry we had)
+
+------------------------------------------------------------------
 PAGE: Departments (https://www.kalomocouncil.gov.zm/?page_id=770)
 ------------------------------------------------------------------
 Indexed text returned only site chrome ("Kalomo Town Council along T1

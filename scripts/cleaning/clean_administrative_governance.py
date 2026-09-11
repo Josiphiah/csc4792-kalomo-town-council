@@ -133,6 +133,17 @@ RECORDS = [
     ),
     dict(
         record_type="Leadership",
+        name_or_title="Valencia Simwale",
+        role_or_function=(
+            "Vice Council Chairperson; also serves as the Naluja Ward "
+            "Councillor (dual role as listed on the Civic Leaders page)"
+        ),
+        ward="Naluja Ward",
+        date="N/A",
+        source_url=CIVIC_LEADERS_URL,
+    ),
+    dict(
+        record_type="Leadership",
         name_or_title="Edgar Sing'ombe",
         role_or_function=(
             "Member of Parliament, Dundumwezi Constituency (national "
@@ -182,14 +193,44 @@ RECORDS = [
     ),
 
     # --- 3. Ward / Councillor --------------------------------------------
-    dict(
-        record_type="Ward",
-        name_or_title="Sialwizi S. Madyenkuku",
-        role_or_function="Ward Councillor",
-        ward="Mwaata Ward",
-        date="N/A",
-        source_url=CIVIC_LEADERS_URL,
-    ),
+    # Full 20-ward roster from a direct browser view of the Civic Leaders
+    # page (2026-09-11) - see source_pages_extract.txt "UPDATE" section.
+    # Split into the same two constituencies the page itself uses; totals
+    # to 20, matching the district profile's stated ward count.
+    *[
+        dict(
+            record_type="Ward",
+            name_or_title=councillor,
+            role_or_function="Ward Councillor",
+            ward=f"{ward} Ward",
+            date="N/A",
+            source_url=CIVIC_LEADERS_URL,
+        )
+        for ward, councillor in [
+            # Dundumwezi Constituency (8 wards)
+            ("Naluja", "Valencia Simwale"),
+            ("Mikata", "Vincent Hamukwala"),
+            ("Chamuka", "Patricia Simbeleko"),
+            ("Omba", "Willard Hamanjanji"),
+            ("Bbilili", "Titus Siamafuwa"),
+            ("Kasukwe", "Joel Muleya"),
+            ("Chikanta", "Astone Malasha"),
+            ("Katanda", "Nkuyanda Malawo"),
+            # Kalomo Central Constituency (12 wards)
+            ("Namwianga", "David Mutentwa"),
+            ("Kalonda", "Denny Moono"),
+            ("Chilesha", "Samson Muchimba"),
+            ("Chifusa", "Mason Munsanje"),
+            ("Nachikungu", "Munsaka Trouble"),
+            ("Sipatunyana", "Howard Munsanje"),
+            ("Chawila", "Roy Sialubala"),
+            ("Siachitema", "Bukoka Milambo"),
+            ("Choonga", "Liberty Chifuwe"),
+            ("Mayoba", "Lewis Mantanyani"),
+            ("Simayakwe", "Miyoba Muloongo"),
+            ("Mwaata", "Sialwizi S. Madyenkuku"),
+        ]
+    ],
 
     # --- 4. Grassroots governance committees ------------------------------
     dict(
@@ -303,7 +344,10 @@ def main():
         df[col] = df[col].astype(str).str.strip()
         df[col] = df[col].replace({"": "N/A", "nan": "N/A", "None": "N/A"})
 
-    df = df.drop_duplicates(subset=["name_or_title", "source_url"]).reset_index(drop=True)
+    # Note: subset includes record_type because Valencia Simwale legitimately
+    # appears twice (Leadership: Vice Council Chairperson; Ward: Naluja Ward
+    # Councillor) - a genuine dual role on the source page, not a duplicate.
+    df = df.drop_duplicates(subset=["record_type", "name_or_title", "source_url"]).reset_index(drop=True)
 
     assert df["source_url"].str.startswith("https://").all(), "every row must have a working https source_url"
     assert not df["record_id"].duplicated().any(), "record_id must be unique"
