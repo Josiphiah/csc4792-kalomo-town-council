@@ -56,9 +56,17 @@ SOURCE_PAGES = [
 # etc. which belong to Faiz's financial dataset or Nicholas's governance
 # dataset instead, so we deliberately filter to planning-related PDFs.)
 RELEVANT_KEYWORDS = [
-    "idp", "investment", "zdsp", "decentralisation", "engagement",
+    "idp", "investment", "zdsp", "decentralisation",
     "procurement", "esmp", "debt-arrears", "citizen_engagement",
+    "stakeholder-engagement",
 ]
+# NOTE: a plain "engagement" keyword was tried first but was too broad - it
+# also matched meeting-minutes PDFs like "2025 EXTRACT MINUTES-STAKEHOLDERS
+# ENGAGEMENT PLAN" and "2025 BUSINESS ENGAGEMENT MINUTES-BUDGET", which are
+# governance/financial records, not development plans. The two specific
+# hyphenated/underscored keywords above match only the actual strategy and
+# plan documents (Citizen_Engagement_Strategy.pdf,
+# 2025-STAKEHOLDER-ENGAGEMENT-PLAN.pdf) without the false positives.
 
 
 def get_soup(url):
