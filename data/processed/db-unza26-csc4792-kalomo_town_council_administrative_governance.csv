@@ -1,0 +1,24 @@
+record_id|record_type|name_or_title|role_or_function|ward|date|source_url|date_scraped
+AG-001|Leadership|Coy Makaya|Council Chairperson|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=3782|2026-09-11
+AG-002|Leadership|Lisa Mpasela|Council Secretary (per the 2023 IDP launch and a 2023-referenced CDF commissioning news post; a later Council Secretary, Trophius Kufanga, is documented separately below - exact handover date not confirmed in available sources)|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=1799|2026-09-11
+AG-003|Leadership|Trophius Kufanga|Council Secretary (per the council's Web-Based MIS launch article; the same individual is separately documented as Council Secretary at Masaiti Town Council in a 2023 public notice, consistent with routine inter-council transfer of council secretaries - exact appointment date to Kalomo not stated in the source)|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=4672|2026-09-11
+AG-004|Leadership|Joshua Munsaka Sikaduli|District Commissioner (Office of the President / central government appointee, not Council staff, but a recurring civic leader at Council events)|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=4672|2026-09-11
+AG-005|Leadership|Jimmy Mubanga|Director of Finance|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=3782|2026-09-11
+AG-006|Leadership|Joel Mweempe|Director of Engineering|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=3782|2026-09-11
+AG-007|Leadership|Judith Beene|Director of Information and Communication Technology (ICT)|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=4672|2026-09-11
+AG-008|Leadership|Harry Kamboni|Member of Parliament, Kalomo Central Constituency (national office, not a Council office; UPND, MP since 2016 per Wikipedia)|N/A|N/A|https://en.wikipedia.org/wiki/Kalomo_Central|2026-09-11
+AG-009|Leadership|Edgar Sing'ombe|Member of Parliament, Dundumwezi Constituency (national office, not a Council office; UPND, MP since 2006 per Wikipedia, also named at a Council CDF-project commissioning event)|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=1799|2026-09-11
+AG-010|Department|Office of the Council Secretary|Administrative leadership and coordination of Council activities; interprets government policy into implementable programmes|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=4672|2026-09-11
+AG-011|Department|Finance Department|Budget preparation/performance, revenue and expenditure management|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=3782|2026-09-11
+AG-012|Department|Engineering Department|Implementation of CDF, ZDSP and Roads Grant infrastructure projects|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=3782|2026-09-11
+AG-013|Department|Information and Communication Technology (ICT) Unit|Council digital systems, incl. the Web-Based Management Information System (MIS)|N/A|N/A|https://www.kalomocouncil.gov.zm/?p=4672|2026-09-11
+AG-014|Ward|Sialwizi S. Madyenkuku|Ward Councillor|Mwaata Ward|N/A|https://www.kalomocouncil.gov.zm/?page_id=2871|2026-09-11
+AG-015|Committee|Ward Development Committee (WDC)|Grassroots link between communities and the Council; members elected by ward residents to represent community development interests. Present in each of the district's 20 wards.|All 20 wards|N/A|https://www.kalomocouncil.gov.zm/?page_id=2259|2026-09-11
+AG-016|Committee|Community Welfare Assistance Committee (CWAC)|Ward-level committee sensitized/engaged under the Revised Cash for Work (R-CFW) Programme|All 20 wards|N/A|https://www.kalomocouncil.gov.zm/?p=5104|2026-09-11
+AG-017|Committee|Satellite Disaster Management Committee (SDMC)|Ward-level disaster-management committee sensitized/engaged under the Revised Cash for Work (R-CFW) Programme, introduced in response to the 2023/2024 drought|All 20 wards|N/A|https://www.kalomocouncil.gov.zm/?p=5104|2026-09-11
+AG-018|Committee|Headmen|Traditional local leaders sensitized/engaged alongside WDCs, CWACs, SDMCs and councillors under the R-CFW Programme|All 20 wards|N/A|https://www.kalomocouncil.gov.zm/?p=5104|2026-09-11
+AG-019|Constituency|Kalomo Central Constituency|One of the district's two parliamentary constituencies|N/A|N/A|https://www.kalomocouncil.gov.zm/?page_id=2242|2026-09-11
+AG-020|Constituency|Dundumwezi Constituency|One of the district's two parliamentary constituencies|N/A|N/A|https://www.kalomocouncil.gov.zm/?page_id=2242|2026-09-11
+AG-021|Chiefdom|Chikanta Chiefdom|One of the district's three traditional chiefdoms|N/A|N/A|https://www.kalomocouncil.gov.zm/?page_id=2242|2026-09-11
+AG-022|Chiefdom|Siachitema Chiefdom|One of the district's three traditional chiefdoms|N/A|N/A|https://www.kalomocouncil.gov.zm/?page_id=2242|2026-09-11
+AG-023|Chiefdom|Sipatunyana Chiefdom|One of the district's three traditional chiefdoms|N/A|N/A|https://www.kalomocouncil.gov.zm/?page_id=2242|2026-09-11

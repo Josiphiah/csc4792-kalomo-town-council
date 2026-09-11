@@ -36,13 +36,22 @@ renamed, or its meaning changes.
 | Column | Type | Description |
 |---|---|---|
 | record_id | string | Unique identifier assigned during cleaning |
-| record_type | string | e.g. Leadership, Department, Ward, WDC, Resolution, Notice, Report |
-| name_or_title | string | Name of official/department/ward or title of resolution/notice |
-| role_or_function | string | Role/mandate/function, where applicable |
-| ward | string | Associated ward, where applicable |
-| date | date (YYYY-MM-DD) | Date of appointment/resolution/notice, where available |
+| record_type | string | Leadership, Department, Ward, Committee (WDC/CWAC/SDMC/Headmen), Constituency, Chiefdom |
+| name_or_title | string | Name of official/department/ward/committee/constituency/chiefdom |
+| role_or_function | string | Role/mandate/function, including any sourcing caveats (e.g. leadership transitions, national vs. Council office) |
+| ward | string | Associated ward, where applicable ("All 20 wards" for district-wide committees, N/A otherwise) |
+| date | date (YYYY-MM-DD) | Date of appointment/resolution/notice; N/A where the source did not state one - see source_pages_extract.txt for why |
 | source_url | string | URL of the page the record was scraped from |
 | date_scraped | date (YYYY-MM-DD) | Date the record was collected |
+
+> Coverage note: the council's Departments and Civic Leaders pages did not
+> fully expose their content to indexed/automated retrieval (see
+> `data/raw/administrative_governance/source_pages_extract.txt`), so this
+> dataset documents the department names, the one ward councillor, and the
+> leadership/committee structure confirmed via news posts and cross-checked
+> national records, rather than a complete 20-ward councillor roster or
+> full department directory. Re-running `scrape_administrative_governance.py`
+> from an unrestricted connection would let this be completed.
 
 ## db-unza26-csc4792-kalomo_town_council_development_plans.csv
 

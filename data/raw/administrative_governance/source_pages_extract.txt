@@ -1,0 +1,129 @@
+SOURCE PAGE EXTRACTS - Kalomo Town Council administrative/governance dataset
+Collected by: Nicholas
+Method: scripts/scraping/scrape_administrative_governance.py targets these
+exact pages on https://www.kalomocouncil.gov.zm/. The council site blocks
+automated/agent HTTP clients (returns 403 to a plain requests.get from this
+environment, and is robots-disallowed for hosted fetch tools), so the
+running notes below were compiled by cross-referencing indexed copies of
+each page's rendered text (the same pages the script targets) together with
+the council's own news posts, which are separately indexed and were fully
+readable. This mirrors the approach already used for the scanned/rotated
+PDFs in data/raw/development_plans (documented from listing/context rather
+than full text) - content is recorded honestly per source, with gaps noted
+rather than invented. Running the script from a normal residential/campus
+connection (as teammates' scripts do for their datasets) should retrieve
+full HTML directly; that raw HTML would land in this same folder.
+
+------------------------------------------------------------------
+PAGE: About Us (https://www.kalomocouncil.gov.zm/?page_id=118)
+------------------------------------------------------------------
+Kalomo served as the initial administrative capital of North-Western
+Rhodesia, 1902-1907. Southern Province, along the Lusaka-Livingstone Road
+(T1), ~120 km north of Livingstone, ~400 km south of Lusaka. Zimba District
+Council separated from Kalomo in 2012 (under President Michael Chilufya
+Sata). Economy: agriculture and livestock; district is the highest maize
+producer in the country and has the second-largest cattle population in
+the province.
+
+------------------------------------------------------------------
+PAGE: Read more / district profile (https://www.kalomocouncil.gov.zm/?page_id=2242)
+------------------------------------------------------------------
+District population: 268,753 (2021 census figure as published on this
+page; the homepage separately states 280,000 in a more general/rounded
+context). Surface area: 8,374 km^2. Elevation: ~1,300 m above sea level.
+Borders 5 districts: Itezhi-Tezhi (Central Province), Namwala, Choma,
+Kazungula, Zimba (all Southern Province). District has a total of 20
+Wards. Comprises 3 Chiefdoms (Chikanta, Siachitema, Sipatunyana) and 2
+Constituencies (Kalomo Central, Dundumwezi).
+
+------------------------------------------------------------------
+PAGE: CIVIC LEADERS (https://www.kalomocouncil.gov.zm/?page_id=2871)
+------------------------------------------------------------------
+Page is structured by the two constituencies (Dundumwezi Constituency,
+Kalomo Central Constituency) and lists ward councillors under each. Only
+one councillor entry was retrievable via indexed text:
+  MWAATA WARD COUNCILLOR - SIALWIZI S. MADYENKUKU
+The full councillor roster (20 wards) was not retrievable through indexed
+text alone; the script should be re-run from an unrestricted connection to
+capture the complete list.
+
+------------------------------------------------------------------
+PAGE: Departments (https://www.kalomocouncil.gov.zm/?page_id=770)
+------------------------------------------------------------------
+Indexed text returned only site chrome ("Kalomo Town Council along T1
+Livingstone - Lusaka road", "Southern province Zambia") - the department
+listing itself appears to be rendered in a way (JS tabs/accordion, as seen
+on the Publications page used in the development_plans dataset) that
+wasn't captured by the indexed snapshot. Department names below are
+therefore sourced from news posts and the MLGRD council profile instead
+(see NEWS POSTS section and https://www.mlgrd.gov.zm/wp-content/uploads/
+2023/07/KALOMO-TOWN-COUNCIL-1.pdf, which is likewise robots-disallowed for
+direct fetch and was only accessible via its indexed snippet, which did not
+itself list departments). Confirmed department/office names in scope:
+Office of the Council Secretary (administration), Finance Department,
+Engineering Department, ICT (Information & Communication Technology) unit.
+Not confirmed from a primary department listing: Public Health, Planning,
+Human Resource, Procurement - these are typical departments at comparable
+Zambian town councils (see e.g. Kalabo/Kalumbila council pages) but are
+NOT included as Kalomo-specific rows below without direct confirmation.
+
+------------------------------------------------------------------
+PAGE: FAQS (https://www.kalomocouncil.gov.zm/?page_id=2259)
+------------------------------------------------------------------
+Defines CDF (Constituency Development Fund) - established 1995 under the
+Local Government Act Cap 281.
+Defines WDC (Ward Development Committee) - "the grass root link between
+the communities and the Local Authorities", formed per ward via an
+electoral process in which residents select representatives.
+
+------------------------------------------------------------------
+NEWS POSTS (council site, individually indexed)
+------------------------------------------------------------------
+?p=1799 - "DUNDUMWEZI CONSTITUENCY CELEBRATES DEVELOPMENT WITH NEW
+EARTH-MOVING EQUIPMENT..." - names Council Chairperson Mr. Coy Makaya,
+District Commissioner Mr. Joshua Sikaduli, Council Secretary Ms. Lisa
+Mpasela, and Dundumwezi MP Hon. Edgar Sing'ombe as attendees/speakers at a
+CDF commissioning event. Exact publish date not present in indexed text
+(event references CDF 2023 funding phase).
+
+?p=3782 - "KALOMO TOWN COUNCIL HOLDS 2026 BUDGET CONSULTATIVE MEETING" -
+meeting chaired by Council Chairperson Mr. Coy Makaya; presentations by
+Director of Finance Jimmy Mubanga (2025 budget performance / 2026 budget
+proposal) and Director of Engineering Joel Mweempe (CDF/ZDSP/Roads Grants
+project updates).
+
+?p=4672 - "KALOMO TOWN COUNCIL LAUNCHES WEB-BASED MANAGEMENT INFORMATION
+SYSTEM (MIS)" - Council Secretary Mr. Trophius Kufanga (note: a Council
+Secretary named Trophius Kufanga is also documented, in a 2023 Masaiti Town
+Council public notice, as Council Secretary at Masaiti Town Council at that
+time - consistent with the normal practice of council secretaries being
+transferred between local authorities; exact transfer/appointment date to
+Kalomo not stated in either source, so this is recorded as an observed
+change rather than dated precisely). District Commissioner Mr. Joshua
+Munsaka Sikaduli also quoted. MIS branded "Paperless Express", implemented
+with Access Bank and Kunachi Software Limited; launch officiated by
+Director of ICT Mrs. Judith Beene standing in for Dr. Gabriel Pollen
+(Permanent Secretary - Administration, MLGRD).
+
+?p=5101 / ?p=5104 - "KALOMO TOWN COUNCIL CONDUCTS COMMUNITY SENSITIZATION
+MEETINGS UNDER REVISED CASH FOR WORK PROGRAMME" - ward-level meetings held
+in all 20 Wards; sensitized groups named as Ward Development Committees
+(WDCs), Community Welfare Assistance Committees (CWACs), Satellite
+Disaster Management Committees (SDMCs), Headmen, and councillors. This is
+the clearest primary confirmation of the council's grassroots governance
+structure beyond WDCs alone.
+
+------------------------------------------------------------------
+EXTERNAL / CROSS-REFERENCE SOURCES (national records, not the council site)
+------------------------------------------------------------------
+Wikipedia "Kalomo Central (constituency)" - MP since 2016: Harry Kamboni
+(United Party for National Development / UPND), re-elected 2021. (Kalomo
+Central is one of the district's two parliamentary constituencies referred
+to throughout the council's own site; included here for completeness of
+the district's civic-leadership picture, clearly marked as a national
+rather than council office.)
+
+Wikipedia "Dundumwenzi (constituency)" - MP since 2006: Edgar Sing'ombe
+(Independent in 2006, UPND from 2011), re-elected through 2026. Matches
+the "Hon. Edgar Sing'ombe, MP for Dundumwezi" named in council news post
+?p=1799 above.
