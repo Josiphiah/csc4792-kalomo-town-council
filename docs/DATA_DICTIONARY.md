@@ -36,7 +36,7 @@ renamed, or its meaning changes.
 | Column | Type | Description |
 |---|---|---|
 | record_id | string | Unique identifier assigned during cleaning |
-| record_type | string | Leadership, Department, Ward, Committee (WDC/CWAC/SDMC/Headmen), Constituency, Chiefdom |
+| record_type | string | Contact, Leadership, Department, Ward, Committee (WDC/CWAC/SDMC/Headmen), Constituency, Chiefdom |
 | name_or_title | string | Name of official/department/ward/committee/constituency/chiefdom |
 | role_or_function | string | Role/mandate/function, including any sourcing caveats (e.g. leadership transitions, national vs. Council office) |
 | ward | string | Associated ward, where applicable ("All 20 wards" for district-wide committees, N/A otherwise) |

@@ -46,7 +46,23 @@ RCFW_URL = "https://www.kalomocouncil.gov.zm/?p=5104"
 WIKIPEDIA_KALOMO_CENTRAL = "https://en.wikipedia.org/wiki/Kalomo_Central"
 WIKIPEDIA_DUNDUMWENZI = "https://en.wikipedia.org/wiki/Dundumwenzi_(constituency)"
 
+FOOTER_URL = "https://www.kalomocouncil.gov.zm/?page_id=770"  # captured from the site-wide footer
+
 RECORDS = [
+    # --- 0. Contact ------------------------------------------------------
+    dict(
+        record_type="Contact",
+        name_or_title="Kalomo Town Council - General Contact Information",
+        role_or_function=(
+            "Email: towncouncilkalomo@gmail.com | Address: 128 Independence "
+            "Avenue, along T1 Livingstone-Lusaka road, Southern Province, "
+            "Zambia | P.O. Box 620062 | Office hours: Mon-Fri 08:00-17:00 Hrs"
+        ),
+        ward="N/A",
+        date="N/A",
+        source_url=FOOTER_URL,
+    ),
+
     # --- 1. Leadership -------------------------------------------------
     dict(
         record_type="Leadership",

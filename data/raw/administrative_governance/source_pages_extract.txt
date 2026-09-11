@@ -93,6 +93,22 @@ KALOMO CENTRAL CONSTITUENCY (12 wards):
   Mwaata      - Sialwizi S. Madyenkuku (previously the only entry we had)
 
 ------------------------------------------------------------------
+UPDATE (site-wide contact footer, supplied by Nicholas from a direct
+browser view on 2026-09-11 - appears identically on every page, incl.
+Departments, so it doesn't resolve the Departments gap below, but is
+genuine council contact information worth keeping)
+------------------------------------------------------------------
+Email: towncouncilkalomo@gmail.com
+Address: 128 Independence Avenue, Kalomo Town Council along T1
+Livingstone-Lusaka road, Southern Province, Zambia
+P.O. Box: 620062
+Office hours: Mon-Fri 08:00-17:00 Hrs
+Quick Links (external government sites): Ministry of Local Government and
+Rural Development, Local Government Service Commission, Ministry of
+Finance and National Planning, Ministry of Agriculture, National Assembly
+of Zambia, Local Government Training Institute.
+
+------------------------------------------------------------------
 PAGE: Departments (https://www.kalomocouncil.gov.zm/?page_id=770)
 ------------------------------------------------------------------
 Indexed text returned only site chrome ("Kalomo Town Council along T1
@@ -111,6 +127,16 @@ Not confirmed from a primary department listing: Public Health, Planning,
 Human Resource, Procurement - these are typical departments at comparable
 Zambian town councils (see e.g. Kalabo/Kalumbila council pages) but are
 NOT included as Kalomo-specific rows below without direct confirmation.
+
+Attempt #2 (2026-09-11): a direct browser paste of this page from Nicholas
+returned only the site-wide footer (contact email/address/P.O. Box/office
+hours/Quick Links - see UPDATE block above), which is identical across
+every page on the site, not this page's own department listing. The
+Departments page's body content still hasn't been captured - whatever
+renders the actual department names/tabs sits above that footer and needs
+to be copied separately (try scrolling to the top of the page, or using
+the browser's "view page source"/inspect-element and searching for
+"department").
 
 ------------------------------------------------------------------
 PAGE: FAQS (https://www.kalomocouncil.gov.zm/?page_id=2259)
