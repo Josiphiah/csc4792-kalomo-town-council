@@ -1,0 +1,147 @@
+A B C D E F G H J K L M N O P Q R S T U V W X
+1 Entity KALOMO TOWN COUNCIL Procurement Plan updated - July 2025
+2 Procurement Plan for year 2025
+3 Version 1
+4 Procurement Budget 47,993,371.87
+5 ZMW Control Total 47,993,371.87
+6 Date Last Updated 22/07/2025
+7 Comments
+8
+9 ZMW Estimated Budget FX Budget Amount Estimated dates
+Class UNSPSC IFMIS GL Description Ref No Project Code Unit of Quantity Other Total Currency Amou Source of Prequalifi Procureme Publication Award Start Public View (Y/N) Public Comm Source Project
+Account Measure nt Funds cation nt Method View ents ID
+10 (Y/N) Justificati
+11 works 72130000 0 Construction of a police staff house at Kasukwe KTC/2025/1 Works Each 1.00 GRZ N sb 10/05/2025 10/06/2025Y
+12 works 72130000 0 Completion of a Truck Yard wall fence KTC/2025/2 Works Each 1.00 GRZ N db 10/05/2025 10/06/2025Y In accordance with Section 46 (2. c)
+13 goods 25101601 0 Purchase of a Dump Truck for Solid Waste Management KTC/2025/3 Goods Each 1.00 GRZ N sb 10/05/2025 10/06/2025Y
+14 works 72130000 0 Fencing of the Dumpsite KTC/2025/5 Works Each 1.00 GRZ N sb 10/05/2025 10/06/2025Y
+15 works 72130000 0 Completion of a Market Shelter at Tandabale Market KTC/2025/6 Works Each 1.00 GRZ N db 10/05/2025 10/06/2025Y In accordance with Section 46 (2. c)
+16 goods 14111509 0 Procurement of stationery KTC/2025/8 Goods Each GRZ N sb 10/05/2025 10/06/2025Y
+17 goods 47000000 0 Procurement of cleaning supplies KTC/2025/9 Goods Each GRZ N sb 10/05/2025 10/06/2025Y
+18 goods 15000000 0 Procurement of fuel and lubricants KTC/2025/10 Goods Liters 50,867.00 GRZ N obn 29/07/2025 29/10/2025Y Procurement will be done as per approval
+19 goods 53102710 0 Procurement of Uniforms and protective clothes KTC/2025/11 Goods Each GRZ N sb 25/07/2025 10/08/2025Y
+20 goods 49220000 0 Procurement of sports and Equipment KTC/2025/12 Goods Each GRZ N sb 25/07/2025 10/08/2025Y
+21 goods 72130000 0 Procurement of Ward Development Community materials KTC/2025/13 Goods Each GRZ N sb 26/07/2025 10/08/2025Y
+22 goods 25100000 0 Procurement of a Motor Vehicle KTC/2025/14 Goods Each GRZ N sb 26/07/2025 10/08/2025Y
+23 goods 73161605 0 Procurement of spares for maintenance of motor vehicles KTC/2025/15 Goods Each GRZ N sb 25/07/2025 15/08/2025Y
+24 non consulting services 82100000 0 Advertising and publicity KTC/2025/16 Service AU GRZ N sb 25/07/2025 15/08/2025Y
+25 goods 53102710 0 Procurement of materials for public events KTC/2025/17 Goods Each GRZ N sb 25/07/2025 15/08/2025Y
+26 non consulting services 83101500 0 Procurement of utility bills KTC/2025/18 Service AU GRZ N sb 25/07/2025 15/08/2025Y
+27 goods 50192700 0 Procurement of refreshments KTC/2025/19 Goods Each GRZ N sb 25/07/2025 15/08/2025Y
+28 goods 42294710 0 Procurement of a cooler box for sample transportation KTC/2025/20 Goods Each 1.00 GRZ N sb 25/07/2025 15/08/2025Y
+29 goods 42260000 0 Procurement of a coffin lowering machine KTC/2025/21 Goods Each 1.00 GRZ N sb 01/08/2025 21/08/2025Y
+30 goods 60104202 0 Procurement of a water testing kit KTC/2025/22 Goods Each 1.00 GRZ N sb 01/08/2025 21/08/2025Y
+31 goods 49121503 0 Procurement of a tent KTC/2025/23 Goods Each 1.00 GRZ N sb 01/08/2025 21/08/2025Y
+32 goods 55121500 0 Procurement of grave tags KTC/2025/24 Goods Each GRZ N sb 01/08/2025 21/08/2025Y
+33 goods 56101602 0 Procurement of funeral chairs KTC/2025/25 Goods Each 20.00 GRZ N sb 01/08/2025 21/08/2025Y
+34 goods 72130000 0 Procurement of materials for rehabilitation of Council Offices KTC/2025/26 Goods Each GRZ N sb 01/08/2025 21/08/2025Y
+35 goods 27000000 0 Procurement of a tool box KTC/2025/27 Goods Each GRZ N sb 01/08/2025 21/08/2025Y
+36 goods 24112004 0 Procurement of skip bins KTC/2025/28 Goods Each GRZ N sb 01/08/2025 21/08/2025Y
+37 goods 72130000 0 Excavation of landfill KTC/2025/29 Goods Each GRZ N sb 10/08/2025 30/08/2025Y
+38 goods 45121504 0 Procurement of a digital camera KTC/2025/30 Goods Each 1.00 GRZ N sb 10/08/2025 30/08/2025Y
+39 goods 14111604 0 Procurement of identity cards KTC/2025/31 Goods Each GRZ N sb 10/08/2025 30/08/2025Y
+40 goods 30201605 0 Procurement of a gazebo KTC/2025/32 Goods Each GRZ N sb 10/08/2025 30/08/2025Y
+41 goods 43230000 0 Procurement of a sotware update for the payroll system KTC/2025/33 Goods Each GRZ N sb 10/08/2025 30/08/2025Y
+42 goods 42272223 0 Procurement of a breathing apparatus set KTC/2025/34 Goods Each GRZ N sb 12/12/2025 28/12/2025Y
+43 goods 46161508 0 Procurement of cones for checkpoints KTC/2025/35 Goods Each 28.00 GRZ N sb 10/08/2025 30/08/2025Y
+44 goods 23270000 0 Procurement of a welding machine KTC/2025/36 Goods Each 1.00 GRZ N sb 10/08/2025 30/08/2025Y
+45 goods 72130000 0 Procurement of materials for maintenance of roads and drainages KTC/2025/37 Goods Each GRZ N sb 10/08/2025 30/08/2025Y
+46 works 72130000 0 Construction of checkpoints KTC/2025/38 Works Each 2.00 GRZ N sb 30/07/2025 30/08/2025Y
+47 works 72130000 0 Construction of a palisade wall fence at old civic center KTC/2025/39 Works Each 1.00 GRZ N sb 30/07/2025 30/08/2025Y
+48 works 72130000 0 Completion of Bbelo Health Post KTC/2025/68 Works Each CDF-KalomoN Central Cosnbst 30/07/2025 30/08/2025Y
+49 works 72130000 0 Completion of Siabalumbi Health Post KTC/2025/69 Works Each CDF-KalomoN Central Cosnbst 30/07/2025 30/08/2025Y
+50 works 72130000 0 Completion of a Laboratory at Chifusa Primary and Secomndary School KTC/2025/72 Works Each CDF-KalomoN Central Cosnbst 30/07/2025 30/08/2025Y
+51 works 72130000 0 Completion of a 1x3 CRB at RR Primary School KTC/2025/73 Works Each CDF-KalomoN Central Cosnbst 30/07/2025 30/08/2025Y
+52 works 72130000 0 Construction of Truck Yard facilities KTC/2025/74 Works Each 1.00 GRZ N obn 25/07/2025 25/10/2025Y Procurement will be done as per approval
+53 goods 72130000 0 Procurement of womens day attire KTC/2025/75 Goods Each 56.00 GRZ N sb 27/07/2025 10/08/2025Y
+54 works 39111608 0 Installation of Solar system at Kasizi health post KTC/2025/76 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+55 works 39111608 0 Installation of Solar system at Nantale health post KTC/2025/77 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+56 works 39111608 0 Installation of Solar system at Nalubumba health post KTC/2025/78 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+57 works 39111608 0 Installation of Solar system at Tara health post KTC/2025/79 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+58 non consulting services 80141604 0 Name branding of cdf projects KTC/2025/80 Service AU CDF N sb 27/07/2025 27/08/2025Y
+59 works 72130000 0 Completion of staff house at Health Post KTC/2025/81 Works Each CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+60 works 72130000 0 Completion of a 1 x 4 at CRB at Mutala School KTC/2025/82 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+61 works 72130000 0 Completion of a 1x3 laboratory at Mukwela School KTC/2025/83 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+62 works 72130000 0 Completion of a staff house at Bbelo School KTC/2025/84 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+63 works 72130000 0 Completion of 1x2 CRB at siapayuma school KTC/2025/85 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+64 works 72130000 0 Completion of a mothers shelter at Natale Health Post KTC/2025/86 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+65 works 72130000 0 Completion of a mortuary at Siachitema Health Post KTC/202587 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+66 works 72130000 0 Completion of Chifusa Health Post KTC/2025/88 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+67 works 72130000 0 Completion of a laboratory at Chifusa Primary and Secondary School KTC/2025/89 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+68 works 72130000 0 Construction of an ablution block at Muchenje health post KTC/2025/90 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+69 works 72130000 0 Construction of a staff house at Muchenje health post KTC/2025/91 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+70 works 72130000 0 Completion of a Laboratory at Choonga Primary and Secondary School KTC/2025/92 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+71 works 72130000 0 Rehabilitation of a dip tank at Mabuyu KTC/2025/93 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+72 works 72130000 0 Completion of a staff house at Dabali Clinic KTC/2025/94 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+73 works 72130000 0 Completion of toilets at Dabali clinic KTC/2025/95 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+74 works 72130000 0 Completion of a staff house at Dabali School KTC/2025/96 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+75 works 72130000 0 Completion of a mortuary at Siachitema Health Post KTC/2025/97 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+76 works 72130000 0 Completion of a 1x3 CRB at Masepela School KTC/2025/98 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+77 works 72130000 0 Completion of a laboratory at Dimbwe School KTC/2025/99 Works Each 1.00 CDF-KalomoN Central Codnbst 27/07/2025 27/08/2025Y In accordance with Section 46 (2. c)
+78 works 72130000 0 Completion of a staff house at Dimbwe School KTC/2025/100 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+79 works 72130000 0 Completion of a 1x3 at Nakabanga School KTC/2025/101 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+80 works 72130000 0 Completion of a staff house at Chibomboma School KTC/2025/102 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+81 works 72130000 0 Completion of a toilet at Chibomboma Health post KTC/2025/103 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+82 works 72130000 0 Completion of a staff house and an ablution at NakabangaSchool KTC/2025/104 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+83 works 72130000 0 Completion of toilets at Nakabanga Clinic KTC/2025/105 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+84 works 72130000 0 Completion of a 1x3 at Munakanyemba School KTC/2025/106 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+85 works 72130000 0 Completion of a 1x3 at Lusumpuko School KTC/2025/107 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+86 works 72130000 0 Completion of a 1x3 at Kasikili School KTC/2025/108 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+87 works 72130000 0 Construction of a 1x3 CRB at Inkumbi School KTC/2025/109 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+88 works 72130000 0 Construction of a staff house at Nalubumba Clinic KTC/2025/110 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+89 works 72130000 0 Construction of a staff house at Muyoba School KTC/2025/111 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+90 works 72130000 0 Completion of a staff house Kansumo KTC/2025/112 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+91 works 72130000 0 Rehabilitation of a 1x3 CRB at RR School KTC/2025/113 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+Page 1
+Procurement Plan updated - July 2025
+A B C D E F G H J K L M N O P Q R S T U V W X
+92 works 72130000 0 Completion of a Laboratory at Greenacres School KTC/2025/114 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+93 works 72130000 0 Completion of 1x3 CRB at Macraymond School KTC/2025/115 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+94 works 72130000 0 Completion of a toilet at Macraymond School KTC/2025/116 Works Each 1.00 CDF-KalomoN Central Cosnbst 29/07/2025 29/09/2025Y
+95 works 72130000 0 Completion of a dormitory at Mwaata School KTC/2025/117 Works Each 1.00 CDF-KalomoN Central Coonbsnt 27/07/2025 27/10/2025Y
+96 works 72130000 0 Completion of a jail cells at correctional service KTC/2025/118 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+97 works 72130000 0 Completion of a1x3 CRB Mukwela KTC/2025/119 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+98 works 72130000 0 Completion of a toilet at Mukwela Clinic KTC/2025/120 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+99 works 72130000 0 Completion of a toilet at Siambala KTC/2025/121 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+100works 72130000 0 Construction of a toilet at Nantale School KTC/2025/122 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+101works 72130000 0 Construction of a staff house at Tara Clinic KTC/2025/123 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+102works 72130000 0 Construction of a toilet at Nantale Clinic KTC/2025/124 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+103works 72130000 0 Construction of a1x2 CRB at munyenye School KTC/2025/125 Works Each 1.00 CDF-KalomoN Central Cosnbst 27/07/2025 27/08/2025Y
+104goods 25100000 0 Procurement of a TLB KTC/2025/126 Goods Each 1.00 CDF-KalomoN Central Coonbsnt 25/07/2025 25/10/2025Y
+105goods 73161605 0 Procurement of Borehole Acessories KTC/2025/127 Goods Each 1.00 CDF-KalomoN Central Coonbsnt 25/07/2025 25/10/2025Y
+106goods 10101508 0 Procurement of goats for various CWACS KTC/2024/128 Goods Each 264.00 GRZ-DistrictN Com Dev Osbffice 10/08/2025 10/09/2025Y
+107goods 25100000 0 Procurement of a TLB KTC/2025/129 Goods Each 1.00 CDF-DunduNmwezi Consotbn 25/07/2025 25/10/2025Y
+108works 56101703 0 Fabrication and delivery of school desks_Dundumwezi KTC/2024/130 Works Each CDF-DunduNmwezi Consotbn 25/07/2025 25/10/2025Y Procurement will be done as per approval
+109works 39111608 0 Installation of Solar pump at Nazibbula KTC/2025/131 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+110works 72130000 0 Construction of a1x2 CRB at Nsalali School KTC/2025/132 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+111works 39111608 0 Installation of Solar irrigation system atNabusanga Dam KTC/2025/133 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+112works 72130000 0 Construction o f a staff house at Nabusanga School KTC/2025/134 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+113works 72130000 0 Completion of a staff house at Kalembela School KTC/2025/135 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+114works 72130000 0 Construction of a1x2 CRB at Moopo School KTC/2025/136 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+115works 72130000 0 Construction o f a staff house atSiantete School KTC/2025/137 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+116works 71121302 0 Drilling 03 boreholes in Munyeke, Sichimbwali and Katanda KTC/2025/138 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+117works 51000000 0 chemicals for Dip Tanks for Siabunkulu KTC/2025/139 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+118works 72130000 0 Construction of a1x2 CRB at Chilala School KTC/2025/140 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+119works 71121302 0 Drilling 03 boreholes inChikanta and Habulile KTC/2025/141 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+120works 72130000 0 Completion o f a 1 x 2 classroom block at Chikanta School KTC/2025/142 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+121works 51000000 0 chemicals for Dip Tanks for Hapuya, Nayemu, Kaminya and Hamakolo KTC/2025/143 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+122works 72130000 0 Construction of Dunuka Health Post KTC/2025/144 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+123works 71121302 0 Drilling 12 boreholes in Kasukwe KTC/2025/145 Works Each CDF-DunduNmwezi Consotbn 25/07/2025 25/10/2025Y
+124works 51000000 0 chemicals for Dip Tanks for Kasukwe KTC/2025/146 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+125works 72130000 0 Construction of a1x2 CRB at Mpango School KTC/2025/147 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+126works 72130000 0 Construction of a staff house at Nabulangu Health Post KTC/2025/148 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+127works 72130000 0 Completion of a staff house at Katanda Agric Camp Office KTC/2025/149 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+128works 72130000 0 Completion of Bungashiya Health Post KTC/2025/150 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+129works 71121302 0 Drilling 12 boreholes in Mikata - Nsungo KTC/2025/151 Works Each CDF-DunduNmwezi Consotbn 25/07/2025 25/10/2025Y
+130works 51000000 0 chemicals for Dip Tanks for Halumbwa KTC/2025/152 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+131works 39111608 0 Installation of water Reticulation System at Nameto KTC/2025/153 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+132works 72130000 0 Renovation o f a 1 x 2 classroom block at Sichikwalula School KTC/2025/154 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+133works 72130000 0 Construction a Dip Tank at Siamusunse KTC/2025/154 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+134works 72130000 0 completion of staff house at Siamusunse School KTC/2025/154 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+135works 72130000 0 completion of staff house at Naluja school KTC/2025/154 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+136works 72130000 0 Construction of a1x2 CRB at Bulyambeba School KTC/2025/155 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+137works 72130000 0 Construction o f a staff house at Habulungu School KTC/2025/156 Works Each 1.00 CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+138works 71121302 0 Drilling 03 boreholes in Omba, Shamba and Nkandazovu KTC/2025/157 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+139works 51000000 0 chemicals for Dip Tanks for Omba, Shamba and Bulyambeba KTC/2025/143 Works Each CDF-DunduNmwezi Consstb 27/07/2025 27/08/2025Y
+140
+Page 2

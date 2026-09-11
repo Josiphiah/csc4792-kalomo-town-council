@@ -1,0 +1,537 @@
+REPUBLIC OF ZAMBIA
+THE LOCAL AUTHORITIES
+DEBT AND ARREARS
+MONITORING MECHANISM
+December, 2023
+
+THE LOCAL AUTHORITIES
+DEBT AND ARREARS
+MONITORING MECHANISM
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+TABLE OF CONTENTS
+LIST OF FIGURES ............................................................................................................................................. iii
+LIST OF TABLES ............................................................................................................................................... iv
+LIST OF ABBREVIATIONS ............................................................................................................................. v
+DEFINITIONS .................................................................................................................................................... vi
+FOREWORD ....................................................................................................................................................... viii
+ACKNOWLEDGMENTS .................................................................................................................................. ix
+1.0 INTRODUCTION ........................................................................................................................................... 1
+1.0 BACKGROUND ............................................................................................................................................. 1
+3.0 CAPACITY DEVELOPMENT IN MANAGEMENT OF DEBT .................................................................. 2
+5.0 RATIONALE ............................................................... .................................................................................. 3
+5. 1. National level will be monitoring the following .................................................................... 3
+5.1.1. At Sub-national level, the following will be monitored ........................................................ 3
+6.0 OVERVIEW OF THE LADAMM ............................................................................................................ 4
+6.1. Objectives............................................................................................................................. 4
+6 .1.1. Overall Objective ............................................................................................................................... 4
+6.1.2. Specific Objectives.................................................................................................................. 4
+7.0 COMPONENTS OF DEBT MONITORING MECHANISM ............................................................... 5
+7.1.M onitoring framework ............................................................................................................... 5
+7.1.1.R isk management framework ................................................................................................... 5
+7.1.2.D ebt and Arrears Monitoring Database..................................................................................... 5
+8.0 INSTITUTIONAL AND IMPLEMENTATION ARRANGEMENTS .............................................. 6
+9. 0. REPORTING MECHANISMS AND TOOLS ...................................................................................... 7
+10.0. REPORTING AND FEEDBACK MECHANISM ......................................................................... 8
+11.0. APPENDIX 1: LOGICAL FRAMEWORK .............................................................................. 9
+12.0. APPENDIX 2: RISK MANAGEMENT FRAMEWORK ...................................................... 16
+13.0 INDICATORS ............................................................................................................................... 19
+ii
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+LIST OF FIGURES
+FIGURE 1: Conceptual Framework of the LADAMM ........................................................................ 2
+FIGURE 2: Local Authority Debt and Economic Impact ....................................................................... 3
+FIGURE 3: Reporting and Feedback Mechanism .................................................................................. 8
+iii
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+LIST OF TABLES
+TABLE 1: Institutional and Implementation Arrangements .................................................................... 6
+TABLE 2: Local Authorities Arrears Report ........................................................................................... 7
+TABLE 3: Local Authorities Debt Report ............................................................................................... 7
+iv
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+LIST OF ABBREVIATIONS
+C.G Central Government
+C.O Cabinet Office
+CIA Committee of Internal Auditors
+DAMM Debt and Arrears Monitoring Mechanism
+DMS Debt Management Strategy
+DRMS Debt Risk Management Strategy
+DS Decentralisation Secretariat
+GDP Gross Domestic Product
+IFA Intergovernmental Fiscal Architecture
+IFRU Intergovernmental Fiscal Relation Unit
+LA Local Authority
+LADMS Local Authority Debt Monitoring System
+LGSC Local Government Service Commission
+MLGRD Ministry of Local Government and Rural Development
+MOFNP Ministry of Finance and National Planning
+MOUs Memorudum of Understandings
+NDP National Decentralisation Policy
+NRMF National Risk Management Framework
+OAG Office of the Auditor General
+PDMA Public Debt Management Act
+PEs Personal Emoluments
+PFMA Public Finance Management Act
+RMG Risk Management Guidelines
+v
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+DEFINITIONS
+In this document, unless the context otherwise require
+Obligation to demonstrate that work has been conducted in compliance
+Accountability with agreed rules and standards or to report fairly and accurately on
+performance results vis a vis mandated roles and/or plans.
+Courses of actions undertaken or work performed through which inputs, such
+as funds, technical assistance and other types of resources are mobilized to
+Activity
+produce specific outputs and ultimately desired objectives and goals.
+The process of ensuring that debt data is complete, accurate and consistent
+Data validation in order to produce reliable and timely information meeting the objectives
+and needs of the Ministry.
+A framework for Local Authorities aimed at monitoring debt management in
+Local Authority Debt
+the Local Authorities to ensure that accrued debt is maintained at sustainable
+and Arrears Monitoring
+levels and also ensure financial stability over the medium to long term
+Mechanism (LADAMM)
+DSA is a debt management tool used to measure the sustainability of
+Debt Sustainability
+public debt.
+Analyses (DSA)
+A broad and long-term objective that a policy, programme or project intends
+Goal
+to accomplish.
+Long-term outcome of a policy, programme or project that can be directly or
+Impact indirectly attributed to the policy, programme or project implementat ion. This
+may be positive or negative, intended or unintended.
+A quantitative or qualitative factor or variable that provides a simple and
+Indicator
+reliable means to measure change, to reflect the changes connected to an
+intervention, or to help assess the performance of a development actor.
+Resources invested or used in the implementation of a policy, programme or
+Inputs
+project, which may include financial, human resource and capital.
+vi
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+Government ministry responsible for performance of stipulated
+Line Ministry functions and responsible for providing oversight to the State -Owned
+Enterprises (SOEs) or other public entities.
+Includes arrears owed to the suppliers of Goods and Services to the
+Local Authorities, arrears for personal emoluments related payments
+Local Authority Arrears
+such as Statutory obligations to bodiessuch as ZRA, NAPS, LASF and
+NHIMA and other staff costs.
+The Local Authority debt is a financial liability arising from borrowing
+Local Authority
+by the Local Authorities
+Debt
+A continuous,systematic and objective collection of data on specified
+indicatorsto provide management and the main stakeholders of an
+Monitoring
+ongoing development intervention with indications of the extent of
+progress and achievement of objectives and progressin the use of
+allocated funds.
+A statement that is specific, measurable, achievable,realistic and time-
+Objective bound that describesthe intended outcomes of a policy, programme or
+project.
+The products, goods or services which result from the implementation
+Output
+of a policy, programme or project.
+A measure of the degree to which a policy, programme or project
+Performance
+achieves intended results based on an objective system of assessment.
+A statement of goals, objectives and courses of action outlined by the
+Policy
+Government to provide guidance for its actions.
+A set of well-planned and interrelated activities aimed at achieving a
+Project
+specific objective(s)in a stipulated time frame.
+An output, outcome or impact arising from the implementation of a
+Result
+policy, programme or project. This may be intended or unintended,
+positive or negative.
+Programme A set of well-planned projectsthat contribute towards attainment of a
+specific goal(s).
+vii
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+FOREWORD
+The Ministry of Finance and National Planning has developed
+the Local Authorities' Debt and Arrears Monitoring
+Mechanism (LADAMM) in order to streamline and enhance
+the monitoring arrangements for Debt and Arrears
+Management in Local Authorities. Particularly, the
+LADAMM is aimed at monitoring the implementation of the
+Debt Management Strategy for Local Authorities to ensure
+that accrued debt and arrears are maintained at sustainable
+levels and also ensure financial stability over the medium to
+long term. This will be done through implementing effective
+preventive and remedial monitoring measures of local
+authority debt through the various strategies that Government
+is implementing. It is envisaged that the outcomes of the
+LADAMM will play a key role in guiding the future
+acquisition of local authorities’ debt which is critical to the
+success of the measures being taken to restore debt to
+sustainable levels at all levels of government. The
+development of the LADAMM comes at a critical time when
+Zambia is faced with a debt crisis of significant proportion.
+Therefore, addressing this debt situation requires
+commitment at all levels.
+Lastly, I wish to thank the various stakeholders who
+participated in the compilation and development of this
+LADAMM which is now ready for use.
+Felix Nkulukusa
+SECRETARY TO THE TREASURY
+viii
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+ACKNOWLEDGMENTS
+The development of the Local Authority Debt and Arrears
+Monitoring Mechanism (LADAMM) is a culmination of
+collective collaborative work that could not have been
+completed without the concerted efforts of various
+stakeholders. I therefore wish to express my sincere
+appreciation to all those that contributed to the development of
+the LADAMM. While recognizing the valuable contribution
+of the various stakeholders to the LADAMM development
+process, I wish to pay special tribute to the World Bank, GIZ,
+USAID, Local Impact and the Local Authorities for their
+immense contribution. Also, the team from the Ministry of
+Finance and National Planning; and Decentralization
+Secretariat, Cabinet Office and the Ministry of Local
+Government and Rural Development deserves special credit
+for their tireless commitment to the development of the
+LADAMM. Other stakeholders not mentioned specifically
+here, also deserve appreciation for their respective
+contributions.
+Mwaka C. Mukubesa
+ACTING PERMANENT SECRETARY – BUDGET
+AND ECONOMIC AFFAIRS
+ix
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+1. 0. INTRODUCTION
+accounting for 21.4 percent. This situation
+The Local Authorities Debt and Arrears Monitoring
+prompted Central Government to intervene by
+Mechanism (LADAMM) is aimed at monitoring
+developing the Debt Management Strategy (DMS)
+the implementation of the Debt Management
+for Local Authorities (2021-2025) with the
+Strategy for Local Authorities 2021 to 2025 to
+objective of dismantling existing debt, preventing
+ensure that accrued debt arrears are maintained at
+new accumulation of debt and putting in place
+sustainable levels and financial stability is achieved
+measures to guide future borrowing.
+over the medium to long term. The LADAMM
+shall be implemented by a multi-disciplinary team
+3.0. CAPACITY DEVELOPMENT IN
+comprising officers from the Ministry of Finance
+MANAGEMENT OF DEBT
+and National Planning (MOFNP), Ministry of
+One of the objectives in the DMS is to guide future
+Local Government and Rural Development
+acquisition of debt and ensure debt Sustainability.
+(MLRD), Decentralisation Secretariat (DS), Local
+In order to achieve this objective, the DMS
+Government Service Commission(LSC) and Local
+proposed the establishment of a DMM as one way
+Authorities (LAs).
+of monitoring and ensuring better management of
+debt in Local Authorities. It is evident that debt in
+2.0. BACKGROUND
+the Local Authorities has continued to grow with
+The issue of debt in Local Authorities still
+the latest verified total debt stock standing at an
+remains a challenge that continues to compromise
+estimated K3.8 billion as at June 2022. It is against
+the efficient and effective delivery of municipal
+this background that this LADAMM has been
+services. As at June 2020, the debt for all Local
+developed. Therefore, it is expected that, the
+Authorities combined was estimated at K2.8
+LADAMM will ensure that this level of debt
+billion, of which statutory obligations accounted
+accumulation is managed so that it does not
+for the largest share at K2.2 billion (78.6 percent) of
+continue to disrupt the provision of services.
+the debt with the rest of the categories of this debt
+1
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+4.0 CONCEPTUAL FRAMEWORK OF
+At central government level, MOFNP, MLGRD,
+THE LADAMM
+and the DS shall be responsible for the development
+This Debt Monitoring Mechanism provides a of the policy framework and legal framework that
+comprehensive front-end and back-end relationships guides local authority debt processes and
+of debt monitoring and management in the Local management. The recommendations that will be
+Authorities. The mechanism monitors preventive made from the analytical reports from the
+and remedial measures of Local Authority debt LADAMM will contribute to evidence based
+management that Central Government and Local decision making to influence policy making on
+Authorities are implementing. Local Authorities debt.
+The mechanism builds on the works that are also Local Authorities intervention is at two levels.
+already being done under the Debt Management Firstly, they are responsible for capturing of meta-
+Strategy for Local Authorities. The mechanism data arising from their daily debt and arrears
+assists the Treasury and other stakeholders to utilise financial transactions, as inputs into the debt
+the output of the LADAMM to inform national level database. On the other level, the outputs generated
+outcomes regarding stabilisation of the economy and from the debt database processing as reports provide
+predicting potential economic impacts. the result frame that will be monitored through this
+LADAMM to shape future policy.
+The LADAMM operates at two levels of government
+with responsibility assigned specifically to each of The figure below depicts the conceptual framework
+the levels. as explained in the text above.
+FIGURE 1: Conceptual Framework of the Ladamm
+DEBT AND ARREARS MONITORING MECHANISM
+FOR LOCAL AUTHORITIES 2023-2027
+CENTRAL GOVERNMENT - MINISTRY OF FINANCE AND NATIONAL PLANNING,
+MINISTRY OF LOCAL GOVERNMENT AND RURAL DEVELOPMENT AND CABINET OFFICE-DS
+LEGAL AND POLICY FRAMEWORK DEBT ANALYTICS AND REPORTING
+• Central Government Level - NDP, IFA. • Quantitative Reporting
+• Local Government - Circulars. • Qualitative Reporting
+DEBT MONITORING FRAMEWORK:
+Output 1. Log-frame outputs
+2. Indicator based outputs - reduction in debt, liquidation plans,
+future of debt.
+Local Authorities
+META DATA OF DEBT IN LA:
+1. Institutional Requirements: Employees Data
+Input 2. Budget Requirements: Revenue and Expenditure
+3. Accountability Requirements: Statutory Obligations, Suppliers
+Loans Contractors, Contributions and Remittances
+2
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+5.0. RATIONALE local government through grants to fill up the
+financing gap to maintain the provision of effective
+This tool provides a consolidated platform that municipal services. This may increase necessary
+allows various players/stakeholders to participate taxes to mobilise more resources which could
+in the fiscus by having a one-stop shop for Local discourage private investment or tax compliance. If
+Authorities Debt and Arrears Monitoring and the Treasury borrows from the public through
+Mechanism through the provision of evidence government securities to fill this gap, it could lead
+based reports to inform decision making and to crowding out of private investment and lead to
+effective debt preventive remedial measure. inflationary pressure arising from higher interest
+rates that the treasury must offer for the additional
+When the ratio of local authority consolidated debt finance. If the Treasury overlooks financing of this
+to national GDP is high, it creates fiscal risks as the gap, service provision at the local level would be
+Treasury could be required to increase financing to affected.
+FIGURE 2: Local Authority Debt and Economic Impact
+IMPROVED
+LOCAL
+INFLATIONARY SERVICE
+AUTHORITY
+PRESSURE DELIVERY
+DEBT
+(LOW)
+RATIOS FISCAL RISK
+GROSS
+POOR SERVICE
+DOMESTIC DELIVERY
+PRODUCT (CRISIS) (HIGH)
+(GDP)
+5.1 National level will be monitoring the utilise the necessary debt performance
+following: metrics or analytical tools such as, debt
+At the national level, debt and arrears ac service-to-revenue, debt stock-to-revenue,
+counting and accountability, debt and arrears
+age analysis of debt, debt-to-assets, debt per
+transparency, debt and arrears auditing, debt
+capita, and debt guidelines will be
+and arrears reporting, debt-to GDP
+developed that will show the detail of these
+Consolidated for all LAs) etc. will be
+analytics.
+monitored
+5.1.1. At Sub-national level, the following will be
+monitored:
+In order to ascertain the level of indebtedness
+in the Local Authorities, there is need to
+3
+6.0. OVERVIEW OF THE LADAMM
+d) To assess risk management of debt and
+arrears in local authorities.
+6.1. Objectives
+e) To provide data or information on debt and
+6.1.1. Overall Objective
+arrears accountability, auditing, and
+To provide a comprehensive platform for capturing,
+transparency;
+monitoring, and analysing debt and arrears in local
+f) To provide an analytical tool for debt and
+authorities.
+arrears related to suppliers, Loans and
+contracts, Personnel Debt, Statutory
+6.1.2. Specific Objectives
+Obligations, Contributions, and
+a) To monitor the implementation of the
+Remittances in local authorities;
+Debt Monitoring Strategy in local
+g) Monitor the impact of local authority debt
+authorities;
+and arrears on service provision at a
+b) To assess the impact of the Local
+community level; and
+Authority plans and programs leading to
+h) To provide various reporting on the Local
+debt sustain ability;
+Authority debt and arrears.
+c) To monitor the debt and arrear
+management capacity activities in Local
+Authorities;
+4
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+7.0 COMPONENTS OF DEBT and the Risk Management Guidelines (RMG) to
+MONITORING MECHANISM guide the implementation of risk management in
+the Local Authorities.
+The LADAMM components consist of the
+Further, a communication and reporting platform
+monitoring framework, the risk management
+shall also be incorporated. Each Local Authority
+framework and the debt and arrears
+should use the Debt Risk Management Framework
+monitoring data base.
+to improve its institutional risk management, focus
+on prevention of fraud and corruption as well as
+7.1. Monitoring framework
+review and assurance of risk management. Risk
+The monitoring framework provides the
+management shall be implemented through the
+means to determine whether the DMS is on
+accounting officers and top management of the
+course to achieve its objectives. It summarises
+Local Authorities. The risk management
+how the monitoring activities will be
+framework is attached at Appendix 2.
+implemented and describes the indicators that
+are used to measure whether the DMS
+7.1.2. Debt and Arrears Monitoring Database
+program is a success. See Appendix 1.
+The tool captures, accounts, computes and
+analyzes debt data for Local Authorities.
+7.1.1. Risk management framework
+Some of the specific functions the software
+The risk management framework provides a
+will perform include:
+3-part approach to risk management:
+1) Providing a platform for Local Authorities to
+1) Risk identification
+manage arrears and debt by generating a gap
+2) Risk assessment
+analysis report;
+3) Risk response
+2) Use both cloud-based and offline- based
+platforms; and
+The risk management framework is anchored on the
+3) Providing a function for capturing age of
+National Risk Management Framework (NRMF)
+debt and arrears in each Local Authority.
+5
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+8.0. INSTITUTIONAL AND
+from the Ministry of Finance and National
+IMPLEMENTATION ARRANGEMENTS
+Planning, Cabinet Office, Ministry of Local
+This mechanism shall be coordinated by Ministry
+Government and Rural Development, selected
+of Finance and National Planning and implemented
+Local Authorities, Local Government Service
+through a Technical Committee on Local Authority
+Commission, Cooperating parties and Civil
+Debt and Arrears Monitoring Mechanism. The
+Society organisations.
+composition of the Committee will include officers
+TABLE 1: Institutional and Implementation Arrangements
+ROLE RESPONSIBILITIES
+Ministry of 1. Conducting Analysis, Reviewing Reports, Making Decisions based on the
+Finance data
+and National 2. Conduct spot checks and validation activities for the entire DMM
+Planning
+3. Provide support towards the dismantling of existing debt and development of
+capacity in the Local Authorities for management of debt to prevent future
+accumulation;
+4. Development of an integrated system for debt management and monitoring
+which interfaces with other financial management systems used by the Local
+Authorities; and
+5. Monitoring and reporting of the debt situation in all Local Authorities.
+Cabinet Office,
+1. Provide coordination in the implementation of policy and participate in debt
+Decentralisation
+monitoring activities.
+Secretariat
+Ministry of local 1. Provide supervision to all Local Authorities in the capturing, processing and
+government and reporting through the Debt Monitoring Software; and
+rural 2. Provide supervision in the implementation of the Risk Management
+development
+Framework for all Local Authorities to avoid unsustainable Debt.
+3. To validate and consolidate report on the debt position of the Local
+Authorities.
+1. Debt data capturing, processing, analyzing and reporting through the Local
+Local authorities’ Debt and Arrears Monitoring Database (LADAMD).
+Authorities 2. Updating of the risk management framework and implementing risk
+mitigation measures and Provide reports as required by this mechanism to all
+relevant stakeholders.
+1. Undertake external auditing activities for each LA for reliability of debt data
+Auditor
+and ascertain the existence of the risk management framework.
+General
+2. To ascertain the implementation of the risk mitigation measures.
+Controller of 1. Undertake internal auditing activities for each LA for reliability of debt data
+Internal Audit and ascertain the existence of the risk management framework.
+2. To ascertain the implementation of the risk mitigation measures.
+1. Cooperating partners will support the implementation of Local authorities’
+Cooperating
+Partnerships Debt and Arrears Monitoring Database (LADAMD), through financial and
+technical support.
+6
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+9. 0. REPORTING MECHANISMS AND TOOLS
+The LADAMM will have two reporting channels namely: An administrative reporting channel and a
+data management channel using the following reports:
+TABLE 2: Local authorities’ Arrears Report
+A. LOCAL AUTHORITIES’ ARREARS REPORT (LAAR)
+1. Latest Stock of Arrears by Economic classification
+2. Stock of Debt liquidated in the month
+3. Additional unserviced invoices that has qualified in the month as arrears
+4. Net additional arrears in the month
+5. Progression of Arrears as a share of Own Source Revenue
+6. Progression of Arrears as a share of Total Resources
+7. Progression in Arrears payment as a share of Total Expenditure
+8. Progression in Creditors Aged Analysis Report
+9. Ratio Analysis on Management Accounts to assess creditworthiness
+Variance Report between month arrears liquidation planned and actual
+10.
+performance
+TABLE 3: Local authorities’ Debt Report
+B. LOCAL AUTHORITIES’ DEBT REPORT (LADR)
+Disbursed and Outstanding Debt
+1.
+Stock of undisbursed debt
+2.
+Debt Service projection (liquidation plan based on the loan agreement)
+3.
+Actual Debt Service
+4.
+Projected disbursement
+5.
+Actual Disbursement
+6.
+Loan Account Statement by creditor
+7.
+Amortization Schedule
+8.
+9.
+Payments in Waiting
+10.
+Ratio Analysis on Management Accounts to assess credit worthiness
+Variance Report between month debt liquidation planned and actual
+11.
+performance
+7
+THE LOCAL AUTHORITIES DEBT AND ARREARS MONITORING MECHANISM
+10.0. REPORTING AND FEEDBACK MECHANISM
+FIGURE 3: Reporting Mechanism and Feedback
+ADMINISTRATIVE DATA MANAGEMENT SYSTEM
+REPORTING CHANNEL REPORTING CHANNEL
+Ministry of Finance
+& National Planning - Server at Ministry of Finance
+Intergovernmental & National Planning
+Fiscal Relations Unit
+Ministry of Local Government
+& Rural Development
+Local Authorities
+8
