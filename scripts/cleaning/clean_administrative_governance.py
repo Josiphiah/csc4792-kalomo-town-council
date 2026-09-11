@@ -43,6 +43,9 @@ CDF_EVENT_URL = "https://www.kalomocouncil.gov.zm/?p=1799"
 BUDGET_MEETING_URL = "https://www.kalomocouncil.gov.zm/?p=3782"
 MIS_LAUNCH_URL = "https://www.kalomocouncil.gov.zm/?p=4672"
 RCFW_URL = "https://www.kalomocouncil.gov.zm/?p=5104"
+INSTITUTIONAL_MGMT_URL = "https://www.kalomocouncil.gov.zm/?page_id=3964"
+FOOD_SECURITY_PACK_URL = "https://www.kalomocouncil.gov.zm/?p=2014"
+SERVICES_URL = "https://www.kalomocouncil.gov.zm/?page_id=792"
 WIKIPEDIA_KALOMO_CENTRAL = "https://en.wikipedia.org/wiki/Kalomo_Central"
 WIKIPEDIA_DUNDUMWENZI = "https://en.wikipedia.org/wiki/Dundumwenzi_(constituency)"
 
@@ -176,12 +179,16 @@ RECORDS = [
         record_type="Department",
         name_or_title="Office of the Council Secretary",
         role_or_function=(
-            "Administrative leadership and coordination of Council activities; "
-            "interprets government policy into implementable programmes"
+            "The Council Secretary is the Chief Executive Officer "
+            "responsible for overseeing Council operations, providing "
+            "overall policy guidance and oversight, and ensuring "
+            "effective linkages among and within Departments/Units "
+            "(per the Institutional Management page, headed by "
+            "Trophius Kufanga)"
         ),
         ward="N/A",
         date="N/A",
-        source_url=MIS_LAUNCH_URL,
+        source_url=INSTITUTIONAL_MGMT_URL,
     ),
     dict(
         record_type="Department",
@@ -198,6 +205,18 @@ RECORDS = [
         ward="N/A",
         date="N/A",
         source_url=BUDGET_MEETING_URL,
+    ),
+    dict(
+        record_type="Department",
+        name_or_title="Department of Community Development and Social Services",
+        role_or_function=(
+            "Administers social support programmes, e.g. handed over "
+            "farming equipment/livestock to beneficiaries under the Food "
+            "Security Pack Program (news post dated 11 September 2024)"
+        ),
+        ward="N/A",
+        date="2024-09-11",
+        source_url=FOOD_SECURITY_PACK_URL,
     ),
     dict(
         record_type="Department",
@@ -338,6 +357,24 @@ RECORDS = [
         ward="N/A",
         date="N/A",
         source_url=PROFILE_URL,
+    ),
+
+    # --- 7. Services ----------------------------------------------------------
+    dict(
+        record_type="Service",
+        name_or_title="Council Services (Services page overview)",
+        role_or_function=(
+            "Refuse collection (Keep Zambia Clean, Green and Healthy "
+            "campaign); borehole drilling for clean water; procurement via "
+            "the Electronic Government Procurement (e-GP) system; feeder-"
+            "road provision through the Engineering Department; HIV/AIDS, "
+            "gender and human rights sensitisation; licensing services "
+            "(trade licences, health permit licences, liquor licences - "
+            "issuing department/unit not stated in the source)"
+        ),
+        ward="N/A",
+        date="N/A",
+        source_url=SERVICES_URL,
     ),
 ]
 

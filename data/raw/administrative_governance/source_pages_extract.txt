@@ -132,11 +132,53 @@ Attempt #2 (2026-09-11): a direct browser paste of this page from Nicholas
 returned only the site-wide footer (contact email/address/P.O. Box/office
 hours/Quick Links - see UPDATE block above), which is identical across
 every page on the site, not this page's own department listing. The
-Departments page's body content still hasn't been captured - whatever
-renders the actual department names/tabs sits above that footer and needs
-to be copied separately (try scrolling to the top of the page, or using
-the browser's "view page source"/inspect-element and searching for
-"department").
+Departments page's body content still hasn't been captured directly, but
+see Attempt #3 below, which found the same information via the site's own
+search feature instead.
+
+Attempt #3 (2026-09-11): Nicholas used the site's built-in search for
+"departments" and pasted the results listing, which surfaced two further
+Kalomo-specific pages (not the generic same-template pages other councils
+publish at the same URL pattern - those were excluded from this dataset
+even though they turned up in a follow-up web search, since they describe
+a different council's structure, not Kalomo's own):
+
+- INSTITUTIONAL MANAGEMENT (https://www.kalomocouncil.gov.zm/?page_id=3964)
+  - headed "TROPHIUS KUFANGA / OFFICE OF THE COUNCIL SECRETARY". Confirms
+    Trophius Kufanga as Council Secretary (matches the MIS-launch article
+    already logged above) and describes the office as: "The Council
+    Secretary is the Chief Executive Officer responsible for overseeing
+    the operations of the Council. The Office provides overall policy
+    guidance and an oversight role. The Office of the Council Secretary
+    ensures that there are effective linkages among and within the
+    Departments/Units..." (search-result snippet truncates there). Full
+    page content (likely a complete department/unit list, based on how
+    the equivalent "Institutional Management" page is structured on
+    several comparable Zambian council sites) was not captured - see
+    "still needed" note below.
+
+- A dated news post (?p=2014, published 11 September 2024): "EMPOWERING
+  COMMUNITIES: KALOMO BENEFITS FROM FOOD SECURITY PACK PROGRAM" - names
+  the "Department of Community Development and Social Services" as
+  handing over farming equipment/livestock to beneficiaries under the
+  Food Security Pack Program.
+
+- Services (https://www.kalomocouncil.gov.zm/?page_id=792) - a service
+  list, Kalomo-specific, including: refuse collection (Keep Zambia Clean,
+  Green and Healthy campaign), borehole drilling for clean water,
+  procurement via the Electronic Government Procurement (e-GP) system,
+  feeder-road provision "through Engineering Departments" (matches the
+  Engineering Department already logged above), HIV/AIDS/gender/human
+  rights sensitisation, and licensing services (trade licences, health
+  permit licences, liquor licences - the snippet cuts off before naming
+  which department/unit issues these, so no department name was added
+  for licensing without that confirmation).
+
+Still needed for a complete department directory: the full body of the
+Institutional Management page (?page_id=3964) itself - open it directly
+(not via search results) and paste everything on it. Based on how this is
+structured on comparable council sites, it likely names every
+department/unit and its head in one place.
 
 ------------------------------------------------------------------
 PAGE: FAQS (https://www.kalomocouncil.gov.zm/?page_id=2259)
