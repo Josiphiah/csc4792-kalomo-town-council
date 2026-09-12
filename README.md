@@ -59,6 +59,6 @@ Link: _TBD_
 
 ## License / attribution
 
-Built by Group [X], CSC4792, University of Zambia, 2026. Data sourced from
+Built by Group [44], CSC4792, University of Zambia, 2026. Data sourced from
 public council records; see the Data in Brief paper for full methodology and
 provenance.
