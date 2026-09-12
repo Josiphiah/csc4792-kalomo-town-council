@@ -55,7 +55,7 @@ e.g. `db-unza26-csc4792-kalomo_town_council_cdf_projects.csv`
 
 ## Kaggle dataset
 
-Link: _TBD_
+Link: https://www.kaggle.com/datasets/goodsonmwensojr/kalomo-town-council-dataset
 
 ## License / attribution
 
