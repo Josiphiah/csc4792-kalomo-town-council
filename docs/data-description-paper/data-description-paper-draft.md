@@ -1,9 +1,14 @@
-> **STATUS OF THIS DRAFT (remove before final submission):** Sections marked
-> **[TODO — blocked]** depend on the CDF, financial, and administrative/
-> governance datasets (Louis, Faiz, Nicholas), which had not been scraped
-> yet as of this draft. Everything else below is complete. Once those three
-> CSVs exist, update the marked sections with their real row counts and
-> final column names, then paste this content into the official Elsevier
+> **STATUS OF THIS DRAFT (remove before final submission), updated 2026-09-12:**
+> Nicholas's (administrative/governance) and Faiz's (financial) datasets are
+> now real and documented below. **Louis's CDF dataset is not yet usable** —
+> as of this update it is an unstructured relabelling of raw scraped articles
+> (3 columns, no amounts/wards/status extracted) and does not meet the
+> project's own schema; its Data Description subsection is intentionally left
+> as a TODO rather than describing data that is about to change. The financial
+> dataset's columns also differ from the original shared dictionary template
+> (documented separately in `docs/DATA_DICTIONARY_financial.md` — needs
+> reconciling into one shared file before submission). Once Louis's dataset is
+> fixed, fill in its subsection and finalise this content, then paste it into the official Elsevier
 > Data in Brief Word/LaTeX template downloaded from
 > https://www.elsevier.com/dib-template (a JS-rendered page; the template
 > file itself must be downloaded manually via a browser — it could not be
@@ -71,15 +76,15 @@ Notable content: the actual Kalomo District Integrated Development Plan (2021–
 
 ## `db-unza26-csc4792-kalomo_town_council_cdf_projects.csv`
 
-**[TODO — blocked, owner: Louis]** Planned columns (per `docs/DATA_DICTIONARY.md`): `project_id`, `project_name`, `ward`, `sector`, `amount_allocated_zmw`, `amount_disbursed_zmw`, `fiscal_year`, `status`, `source_url`, `date_scraped`. Update this subsection with final row count and any column changes once scraping/cleaning is complete.
+**[TODO — blocked, owner: Louis]** As of this draft, this file has 9 rows and only three columns (`project_name`, `source_url`, `description`) — a direct relabelling of raw scraped news-article fields, not yet structured against the agreed schema. Do not write this subsection until the dataset is reworked to match `docs/DATA_DICTIONARY.md` (`project_id`, `project_name`, `ward`, `sector`, `amount_allocated_zmw`, `amount_disbursed_zmw`, `fiscal_year`, `status`, `source_url`, `date_scraped`) — the underlying source articles do contain real kwacha figures, wards, and project statuses that simply have not been extracted yet.
 
 ## `db-unza26-csc4792-kalomo_town_council_financial_data.csv`
 
-**[TODO — blocked, owner: Faiz]** Planned columns (per `docs/DATA_DICTIONARY.md`): `record_id`, `fiscal_year`, `category`, `description`, `amount_zmw`, `source_url`, `date_scraped`. Update this subsection with final row count and any column changes once scraping/cleaning is complete.
+18 rows, 9 columns: `council_name`, `fiscal_year`, `record_type`, `amount_zmw`, `target_or_actual`, `source_url`, `scrape_date`, `percent_of_target`, `notes`. Note this final schema differs from the original template in `docs/DATA_DICTIONARY.md` — it was documented separately by its owner in `docs/DATA_DICTIONARY_financial.md`, which should be reconciled into the single shared dictionary before submission. Each row is one revenue/expenditure line item for a given fiscal year (2024: 2 rows, 2025: 14 rows, 2026: 2 rows), covering approved budgets, expenditure, LGEF disbursements, local taxes, market fees, and fees and charges, each tagged as a `target_or_actual` figure and, where the source stated it, a `percent_of_target` achievement rate. Values are sourced from real council budget PDFs and consultative-meeting documents; several rows carry a `notes` caveat where extraction was from a flattened PDF table rather than prose (flagged by the owner as more fragile and worth spot-checking against the source PDF).
 
 ## `db-unza26-csc4792-kalomo_town_council_administrative_governance.csv`
 
-**[TODO — blocked, owner: Nicholas]** Planned columns (per `docs/DATA_DICTIONARY.md`): `record_id`, `record_type`, `name_or_title`, `role_or_function`, `ward`, `date`, `source_url`, `date_scraped`. Update this subsection with final row count and any column changes once scraping/cleaning is complete.
+88 rows, 8 columns, matching `docs/DATA_DICTIONARY.md` exactly: `record_id`, `record_type`, `name_or_title`, `role_or_function`, `ward`, `date`, `source_url`, `date_scraped`. Covers Leadership (24 rows — council chairperson, secretary, and successive appointees with sourcing caveats where a transition date wasn't stated), Committees (21 rows — CDFC, WDC, CWAC, SDMC and others), the full ward roster (20/20 wards), Departments (9 rows — all units under the Office of the Council Secretary plus three line departments), Council Resolutions (6), Chiefdoms (3), Constituencies (2), plus one Contact record and one Service record. Three uploaded scanned meeting-minutes documents (Dundumwezi and Kalomo Central CDF Committee minutes, and a Community Engagement Budget Preparation meeting) were used to close the "meeting resolutions, public notices, and reports" requirement, cited by document title/date where no public URL exists rather than left blank.
 
 # Experimental Design, Materials and Methods
 
@@ -116,7 +121,9 @@ Known limitations, documented rather than concealed:
 - The council's website serves an incomplete TLS certificate chain; scraping required disabling certificate verification for this specific host. No credentials are transmitted by any request in this project, so this affects only tamper-detection on public GET requests, not data confidentiality.
 - Four of the ten PDFs relevant to the development-plans dataset are scanned images with no meaningful extractable text layer; no OCR step was applied given the project timeline, so those four records carry less descriptive detail than the others, and this is stated explicitly in their `description` field rather than inferred.
 - The IDP's own published Capital Investment Plan table (Table 28) does not list budgeted amounts for its ten proposed projects — this is a gap in the source document itself, not a data-collection failure, and is recorded as such rather than estimated.
-- **[TODO — blocked]** Note any equivalent limitations Louis, Faiz, and Nicholas encounter in their datasets (e.g. whether a standalone budget/IDP document was or wasn't publicly available for the financial dataset, per the project's fallback guidance).
+- Several rows in the financial dataset were extracted from flattened PDF budget tables rather than prose; table-layout extraction is more fragile than prose extraction, so these rows carry an explicit `notes` caveat recommending verification against the source PDF if precision matters.
+- A small number of leadership records in the administrative/governance dataset carry sourcing caveats rather than a single confirmed fact — for example, where two individuals are documented as Council Secretary from different source articles with no stated handover date, both are recorded with the ambiguity noted in `role_or_function` rather than one being silently dropped or a transition date being guessed.
+- **[TODO — blocked]** The CDF dataset does not yet meet the project's schema (see Data Description above) and has no limitations section of its own until it is reworked — do not finalise this paper until that dataset is fixed.
 
 # CRediT author statement
 
