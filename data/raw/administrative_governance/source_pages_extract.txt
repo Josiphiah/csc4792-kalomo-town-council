@@ -277,3 +277,77 @@ Wikipedia "Dundumwenzi (constituency)" - MP since 2006: Edgar Sing'ombe
 (Independent in 2006, UPND from 2011), re-elected through 2026. Matches
 the "Hon. Edgar Sing'ombe, MP for Dundumwezi" named in council news post
 ?p=1799 above.
+
+------------------------------------------------------------------
+UPLOADED SCANNED DOCUMENTS (user-supplied primary sources, not from the
+website - no public URL exists for these, so they're cited by document
+title/date in the cleaning script instead)
+------------------------------------------------------------------
+This resolves the "meeting resolutions, public notices, and reports" gap
+that was the one open item against Issue #3's data-points checklist.
+
+1. "MINUTES OF THE DUNDUMWEZI CONSTITUENCY DEVELOPMENT FUND COMMITTEE
+   MEETING HELD ON 29TH DECEMBER, 2023" (DUNDUMWEZI-MINUTES-2024.pdf)
+   Members present: Simon Chikonka (CDF Chairperson), Febias Simisamu,
+   Staff Hakumbila, Happiness Kaande, Patricia Simbeleko, Ebby Kapepe,
+   Adron Mudenda, and MP Sing'ombe Edgar.
+   Officers present: Miranda Muleya (District Planning Officer), Zyambo
+   Christopher (District Treasurer), Banda Chikumbuso (Director of
+   Works), Rose Chulu (Social Economic Planner), Wallace Hamasuku (Ass.
+   Com Development Officer), Janet Chilala (Ag. Snr Committee Clerk).
+   Contains several numbered "RESOLVED THAT" resolutions (minute
+   references CDFKALDUN/xx/12/23) - the governance-relevant ones
+   (minutes adoption, empowerment loan ward-allocation formula, boarding/
+   skills-training application approvals) were added as Resolution rows.
+   The detailed CDF financial figures (desks/ambulance/chief's palace/
+   Ziziba Dam funding amounts) were NOT duplicated into this dataset -
+   they belong in the team's cdf_projects and/or financial_data datasets.
+
+2. "MINUTES OF THE PROCEEDINGS OF KALOMO CENTRAL CONSTITUENCY
+   DEVELOPMENT FUND COMMITTEE MEETING HELD ON FRIDAY 9TH FEBRUARY 2024
+   AND SATURDAY 10TH FEBRUARY 2024" (kalomo-central-cdf-minutes-feb-2024.pdf)
+   Committee members: Siyunyi Katanekwa (Chairperson), Moses M Hamoonga,
+   Sialubala Roy, Michael Chinganya, Mason Musanje, Sialwizi S.
+   Madyenkuku, Dickson Simbweede, and MP Kamboni Harry.
+   Officers present: Christopher Zyambo (Council Treasurer), Chikumbuso
+   Banda (Director of Works), Miranda Muleya (DPO Secretariat), Wallance
+   Hamasuku (Ass/Community Dev Officer), Rose Chulu (Socio-Economic
+   Planner), Janet Chilala (Committee Clerk). In attendance: Phiri R.
+   Kandindi (PA, National Assembly - not council staff).
+   Contains a 33-project list (Appendix) for Kalomo Central Constituency
+   totalling K16,589,200.12 - only the fact of approval was added as a
+   Resolution row here; the full project-by-project table was NOT
+   duplicated (belongs in the team's cdf_projects dataset - this document
+   would be a strong addition for whoever owns that file, since their
+   current dataset has only 10 rows from a blocked/fallback scrape).
+
+3. "KALOMO TOWN COUNCIL - COMMUNITY ENGAGEMENT MEETING MINUTES ON BUDGET
+   PREPARATION", 28 November 2024, Kalomo Central, facilitated by Nelson
+   Sichali (community-Engagement-meeting-2025-Budget.pdf)
+   By far the richest new source: names Trophius Kufanga explicitly as
+   "Council Secretary (Chairperson - Kalomo Town Council)", and lists a
+   long attendance roll including named WDC Chairpersons for 14 of the
+   20 wards (Katanda, Choonga, Naluja, Namwianga, Simayakwe, Sipatunyana,
+   Chilesha, Bbilili, Nachikungu, Kalonda, Siachitema, Chikanta, plus
+   Mayoba and Chawila under "Apologies" - absent that day but named as
+   sitting chairpersons) - all added as individual Committee rows. Ruth
+   M. Langisi is listed only as "WDC-Mwaata" without an explicit
+   "Chairperson" label, so that title was not assumed for her row.
+   Also names several council officers not previously in this dataset:
+   Choolwe Hachija (Chief Accountant), Mary Muponda (Public Relations
+   Officer), Bridget Mweetwa (Internal Auditor), Siabona Gamitto (Council
+   Advocate - confirms who heads the Legal Services Unit), Muchula
+   Maboshe (Chief Administrative and Committee Officer), Janet Chilala
+   (Senior Committee Clerk), Nchimunya Saasa (Committee Clerk), Gideon
+   Lengwe (Valuation Officer), Bosco Kapopo (Community Development
+   Officer). Also present but NOT added as council governance rows since
+   they're central-government or external-stakeholder roles, not Council
+   structure: Miyanda Mukata (DEBS), Misheck Mukanzu (Ag/District Health
+   Director), Benjamin Kahonda (OP (SP)), and representatives of Gears
+   Initiative, Kalomo Pastors Fellowship, and Voice of Kalomo Radio
+   Station (external stakeholder orgs attending, not council structure).
+   Contains a Director of Finance budget-performance report (2024: 76%
+   collection efficiency; proposed 2025 budget K156.3 million) - the fact
+   that this report was presented was added as a Report row; the detailed
+   revenue/expenditure-by-economic-classification tables were NOT
+   duplicated (belongs in the team's financial_data dataset).

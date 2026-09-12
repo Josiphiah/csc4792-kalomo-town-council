@@ -51,6 +51,14 @@ WIKIPEDIA_DUNDUMWENZI = "https://en.wikipedia.org/wiki/Dundumwenzi_(constituency
 
 FOOTER_URL = "https://www.kalomocouncil.gov.zm/?page_id=770"  # captured from the site-wide footer
 
+# Uploaded scanned council documents (not from the website - user-supplied
+# primary sources). No public URL exists for these, so source_url records
+# the document title/date instead, consistent with how a physical/scanned
+# source with no URL should be cited when a URL genuinely doesn't exist.
+DUNDUMWEZI_CDF_MINUTES_URL = "Dundumwezi CDF Committee Minutes, 29 December 2023 (uploaded scan, no public URL)"
+KALOMO_CENTRAL_CDF_MINUTES_URL = "Kalomo Central CDF Committee Minutes, 9-10 February 2024 (uploaded scan, no public URL)"
+BUDGET_ENGAGEMENT_MINUTES_URL = "Community Engagement Meeting Minutes on Budget Preparation, 28 November 2024 (uploaded scan, no public URL)"
+
 RECORDS = [
     # --- 0. Contact ------------------------------------------------------
     dict(
@@ -126,7 +134,13 @@ RECORDS = [
     dict(
         record_type="Leadership",
         name_or_title="Joel Mweempe",
-        role_or_function="Director of Engineering",
+        role_or_function=(
+            "Director of Engineering (per the 2026 budget consultative "
+            "meeting post). Also appears, spelled \"Joel Mwempe\" and "
+            "titled \"Ass. Director of Engineering Services\", in the "
+            "28 Nov 2024 Community Engagement Meeting minutes - same "
+            "person, spelling/title varies slightly by document"
+        ),
         ward="N/A",
         date="N/A",
         source_url=BUDGET_MEETING_URL,
@@ -425,6 +439,310 @@ RECORDS = [
         date="N/A",
         source_url=SERVICES_URL,
     ),
+
+    # --- 8. Constituency Development Fund Committees (CDFC) ---------------
+    # Formal governance committees, confirmed via uploaded scanned minutes
+    # (not on the public website). Membership as printed in each minutes
+    # document.
+    dict(
+        record_type="Committee",
+        name_or_title="Dundumwezi Constituency Development Fund Committee (CDFC)",
+        role_or_function=(
+            "Chairperson: Simon Chikonka. Members: Febias Simisamu, Staff "
+            "Hakumbila, Happiness Kaande, Patricia Simbeleko, Ebby Kapepe, "
+            "Adron Mudenda, and MP Edgar Sing'ombe. Reviews and resolves on "
+            "CDF community project applications and fund allocation for "
+            "Dundumwezi Constituency (per minutes of the meeting held 29 "
+            "December 2023)"
+        ),
+        ward="N/A",
+        date="2023-12-29",
+        source_url=DUNDUMWEZI_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Committee",
+        name_or_title="Kalomo Central Constituency Development Fund Committee (CDFC)",
+        role_or_function=(
+            "Chairperson: Siyunyi Katanekwa. Members: Moses M Hamoonga, "
+            "Sialubala Roy, Michael Chinganya, Mason Musanje, Sialwizi S. "
+            "Madyenkuku, Dickson Simbweede, and MP Harry Kamboni. Reviews "
+            "and resolves on CDF community project applications and fund "
+            "allocation for Kalomo Central Constituency (per minutes of "
+            "the meeting held 9-10 February 2024)"
+        ),
+        ward="N/A",
+        date="2024-02-09",
+        source_url=KALOMO_CENTRAL_CDF_MINUTES_URL,
+    ),
+
+    # --- 9. Named Ward Development Committee (WDC) Chairpersons -----------
+    # From the attendance list of the 28 Nov 2024 Community Engagement
+    # Meeting on Budget Preparation - the first time named individuals were
+    # confirmed per ward (vs. the generic WDC-are-present-in-every-ward
+    # record already logged under Committee above). Two names come from the
+    # meeting's "Apologies" list (absent that day, but named as the sitting
+    # WDC Chairperson for their ward, per the minutes).
+    *[
+        dict(
+            record_type="Committee",
+            name_or_title=f"Ward Development Committee (WDC) Chairperson - {ward} Ward",
+            role_or_function=f"WDC Chairperson: {name}",
+            ward=f"{ward} Ward",
+            date="2024-11-28",
+            source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+        )
+        for ward, name in [
+            ("Katanda", "Jeremiah Muyangana"),
+            ("Choonga", "Clayford Hakooba"),
+            ("Naluja", "Paul Hamweemba"),
+            ("Namwianga", "Costene Chiyumba"),
+            ("Simayakwe", "Mercy Chilundika"),
+            ("Sipatunyana", "Winter Moono"),
+            ("Chilesha", "Jerald Makaya"),
+            ("Bbilili", "Albertina Habuluba"),
+            ("Nachikungu", "Patient Munyandi"),
+            ("Kalonda", "Allan Kanenga"),
+            ("Siachitema", "Nakambowa Songiso"),
+            ("Chikanta", "Stanley Nalube"),
+            ("Mayoba", "Abion Muntanga"),  # listed under Apologies (absent)
+            ("Chawila", "Payford Dabali"),  # listed under Apologies (absent)
+        ]
+    ],
+    dict(
+        record_type="Committee",
+        name_or_title="Ruth M. Langisi",
+        role_or_function=(
+            "Listed on the attendance sheet simply as \"WDC-Mwaata\" - "
+            "likely a WDC representative for Mwaata Ward, but the source "
+            "does not explicitly state \"Chairperson\" (unlike the 14 "
+            "entries above that do), so that title is not assumed here"
+        ),
+        ward="Mwaata Ward",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+
+    # --- 10. Additional council leadership/staff confirmed via minutes -----
+    dict(
+        record_type="Leadership",
+        name_or_title="Choolwe Hachija",
+        role_or_function="Chief Accountant, Kalomo Town Council",
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Mary Muponda",
+        role_or_function="Public Relations Officer (heads the Public Relations Unit logged above)",
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Bridget Mweetwa",
+        role_or_function="Internal Auditor (heads the Internal Audit Unit logged above)",
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Siabona Gamitto",
+        role_or_function="Council Advocate (heads the Legal Services Unit logged above)",
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Muchula Maboshe",
+        role_or_function="Chief Administrative and Committee Officer",
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Janet Chilala",
+        role_or_function=(
+            "Senior Committee Clerk (listed as \"Ag. Snr Committee Clerk\" "
+            "in the Dec 2023 Dundumwezi CDF minutes and \"Committee Clerk\" "
+            "in the Feb 2024 Kalomo Central CDF minutes - same person, "
+            "title varies slightly by document)"
+        ),
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Nchimunya Saasa",
+        role_or_function="Committee Clerk",
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Gideon Lengwe",
+        role_or_function="Valuation Officer",
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Bosco Kapopo",
+        role_or_function=(
+            "Community Development Officer (part of the Department of "
+            "Community Development and Social Services logged above)"
+        ),
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Miranda Muleya",
+        role_or_function=(
+            "Ag. District Planning Officer (Secretariat) - appears across "
+            "all three uploaded CDF/budget meeting minutes (Dec 2023, Feb "
+            "2024, Nov 2024) as the compiling/secretariat officer"
+        ),
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Christopher Zyambo",
+        role_or_function=(
+            "Council/District Treasurer (titled \"District Treasurer\" in "
+            "the Dec 2023 Dundumwezi minutes and \"Council Treasure[r]\" "
+            "in the Feb 2024 Kalomo Central minutes - same person)"
+        ),
+        ward="N/A",
+        date="2024-02-09",
+        source_url=KALOMO_CENTRAL_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Chikumbuso Banda",
+        role_or_function="Director of Works",
+        ward="N/A",
+        date="2024-02-09",
+        source_url=KALOMO_CENTRAL_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Rose Chulu",
+        role_or_function="Socio-Economic Planner",
+        ward="N/A",
+        date="2024-02-09",
+        source_url=KALOMO_CENTRAL_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Leadership",
+        name_or_title="Wallace Hamasuku",
+        role_or_function="Assistant Community Development Officer",
+        ward="N/A",
+        date="2024-02-09",
+        source_url=KALOMO_CENTRAL_CDF_MINUTES_URL,
+    ),
+
+    # --- 11. Resolutions (curated - selected governance-level resolutions
+    # from the three uploaded minutes documents. Detailed CDF project-level
+    # tables and financial performance figures in these same documents are
+    # deliberately NOT duplicated here - that level of detail belongs in
+    # the team's separate cdf_projects and financial_data datasets, not
+    # administrative_governance. See source_pages_extract.txt for the note
+    # flagging this to those dataset owners.) --------------------------------
+    dict(
+        record_type="Resolution",
+        name_or_title="CDFKALDUN/07/11/23: Adoption of CDF Minutes",
+        role_or_function="Resolved: the Dundumwezi CDF minutes held 29 November 2023 be adopted as a true record of proceedings",
+        ward="N/A",
+        date="2023-12-29",
+        source_url=DUNDUMWEZI_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Resolution",
+        name_or_title="CDFKALDUN/14/12/23: Empowerment Loan Application for 2024",
+        role_or_function="Resolved: each ward be allocated K400,000.00 for empowerment loans; committee members to select successful applicants",
+        ward="All wards (Dundumwezi Constituency)",
+        date="2023-12-29",
+        source_url=DUNDUMWEZI_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Resolution",
+        name_or_title="CDFKALDUN/14/15/23: Secondary School Boarding and Skills Development Applications for 2024",
+        role_or_function=(
+            "Resolved: 164 Secondary Boarding School applicants and 117 "
+            "Skills Development Training applicants approved; all "
+            "applications to Nsenje Hills Training Institute withdrawn "
+            "(overly priced tuition) and all to Mufurila Training "
+            "Institute withdrawn (students denied food despite payment)"
+        ),
+        ward="All wards (Dundumwezi Constituency)",
+        date="2023-12-29",
+        source_url=DUNDUMWEZI_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Resolution",
+        name_or_title="CDFKALCEN/02/02/24: Adoption of CDF Minutes",
+        role_or_function="Resolved: the CDF Central minutes held 23 November 2023 be adopted as a true record of proceedings, with amendments",
+        ward="N/A",
+        date="2024-02-09",
+        source_url=KALOMO_CENTRAL_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Resolution",
+        name_or_title="CDFKALCEN/03/02/24: Amendment of 2024 Proposed Projects",
+        role_or_function=(
+            "Resolved: a 33-project list for Kalomo Central Constituency "
+            "approved with amended funding amounts, totalling "
+            "K16,589,200.12 (full project-level detail intentionally not "
+            "duplicated here - see the team's cdf_projects dataset)"
+        ),
+        ward="All wards (Kalomo Central Constituency)",
+        date="2024-02-09",
+        source_url=KALOMO_CENTRAL_CDF_MINUTES_URL,
+    ),
+    dict(
+        record_type="Resolution",
+        name_or_title="CES/05/11/24: Submission of Proposed Projects for 2025 (ZDSP)",
+        role_or_function=(
+            "Resolved: 6 projects approved for Zambia Devolution Support "
+            "Programme (ZDSP) funding - Trucking Bay (Kalomo Central), "
+            "Solar Street Lights along T1 Phase II, Dump site fencing, "
+            "Refuse Bays (5 markets), Police Post Staff House at Kasukwe "
+            "(Dundumwezi), Water Irrigation Scheme at Mukwela (Kalomo "
+            "Central)"
+        ),
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
+
+    # --- 12. Reports --------------------------------------------------------
+    dict(
+        record_type="Report",
+        name_or_title="Community Engagement Meeting Minutes on Budget Preparation",
+        role_or_function=(
+            "Director of Finance presented 2024 budget performance (76% "
+            "overall collection efficiency against the approved annual "
+            "budget) and the proposed 2025 budget (K156.3 million, a 63% "
+            "increase over 2024, driven by the new Cash for Work Fund and "
+            "increased CDF). Detailed revenue/expenditure figures "
+            "intentionally not duplicated here - see the team's "
+            "financial_data dataset"
+        ),
+        ward="N/A",
+        date="2024-11-28",
+        source_url=BUDGET_ENGAGEMENT_MINUTES_URL,
+    ),
 ]
 
 
@@ -451,7 +769,11 @@ def main():
     # Councillor) - a genuine dual role on the source page, not a duplicate.
     df = df.drop_duplicates(subset=["record_type", "name_or_title", "source_url"]).reset_index(drop=True)
 
-    assert df["source_url"].str.startswith("https://").all(), "every row must have a working https source_url"
+    # Most rows cite a live https:// page; a handful cite an uploaded scanned
+    # document that has no public URL (see the *_MINUTES_URL constants above) -
+    # those are allowed too, but every row must have a real, non-empty source.
+    valid_source = df["source_url"].str.startswith("https://") | df["source_url"].str.contains("uploaded scan, no public URL")
+    assert valid_source.all(), "every row must cite either a working https source_url or a clearly-labelled uploaded document"
     assert not df["record_id"].duplicated().any(), "record_id must be unique"
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
