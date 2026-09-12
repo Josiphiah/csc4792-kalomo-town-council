@@ -181,6 +181,43 @@ structured on comparable council sites, it likely names every
 department/unit and its head in one place.
 
 ------------------------------------------------------------------
+UPDATE (full Institutional Management page body, supplied by Nicholas
+from a direct browser view on 2026-09-11 - this is the complete page,
+resolving the department-directory gap noted above)
+------------------------------------------------------------------
+Confirms Trophius Kufanga, Office of the Council Secretary (as already
+logged from the MIS-launch article and the earlier partial snippet).
+
+"The Office of the Council Secretary comprises of the following Units":
+  Legal Services Unit    - legal advice, safeguards Council's interests;
+                            headed by a Council Advocate, assisted by 2
+                            Senior Legal Assistants
+  Procurement and Supplies Unit - procurement of works/goods/services for
+                            value for money and efficient resource use
+  Public Relations Unit  - informs the public, enhances the Council's image
+  Internal Audit Unit    - manages internal audit function, oversight of
+                            public resources
+  ICT Unit                - manages/supports the Council's technology
+                            systems (supersedes the earlier, less precise
+                            ICT Unit description sourced from the
+                            MIS-launch article)
+
+This resolves the previously open "full department directory" gap for
+everything that sits under the Office of the Council Secretary. Note this
+page does NOT re-list Finance or Engineering (confirmed separately via the
+2026 budget consultative meeting post) or Community Development and
+Social Services (confirmed via the Food Security Pack post) - those
+appear to be separate departments outside the Council Secretary's five
+units, consistent with a typical Zambian council org structure (Office of
+Council Secretary + line departments).
+
+The page's "DEPARTMENTAL ACTIVITIES AND PHOTO FOCUS" feed also confirms a
+real publish date for the R-CFW sensitization post already logged above:
+?p=5104, published **16 June 2026** (previously logged as date "N/A" -
+now updated in the cleaning script for the WDC/CWAC/SDMC/Headmen rows
+that cite this post).
+
+------------------------------------------------------------------
 PAGE: FAQS (https://www.kalomocouncil.gov.zm/?page_id=2259)
 ------------------------------------------------------------------
 Defines CDF (Constituency Development Fund) - established 1995 under the

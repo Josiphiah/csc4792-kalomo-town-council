@@ -44,16 +44,15 @@ renamed, or its meaning changes.
 | source_url | string | URL of the page the record was scraped from |
 | date_scraped | date (YYYY-MM-DD) | Date the record was collected |
 
-> Coverage note: the council's Departments page (`?page_id=770` itself)
-> still hasn't been captured directly - two department names were instead
-> confirmed via the site's own search results and dated news posts (see
-> `data/raw/administrative_governance/source_pages_extract.txt`,
-> "Attempt #3"), including the Institutional Management page
-> (`?page_id=3964`) naming the current Council Secretary. That page's full
-> body (likely a complete department/unit directory, based on comparable
-> council sites) is the one remaining open gap - opening it directly and
-> pasting its full content would complete this dataset. The ward
-> councillor roster is complete (20/20 wards, see below).
+> Coverage note: the ward councillor roster is complete (20/20 wards),
+> and the department directory is now complete for everything under the
+> Office of the Council Secretary (5 units: Legal Services, Procurement
+> and Supplies, Public Relations, Internal Audit, ICT) plus the 3
+> line departments confirmed separately (Finance, Engineering, Community
+> Development and Social Services) - see
+> `data/raw/administrative_governance/source_pages_extract.txt` for the
+> full page-by-page sourcing. No further gaps are tracked for this dataset
+> as of 2026-09-11.
 
 ## db-unza26-csc4792-kalomo_town_council_development_plans.csv
 

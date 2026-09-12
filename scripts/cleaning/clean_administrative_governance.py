@@ -220,11 +220,60 @@ RECORDS = [
     ),
     dict(
         record_type="Department",
-        name_or_title="Information and Communication Technology (ICT) Unit",
-        role_or_function="Council digital systems, incl. the Web-Based Management Information System (MIS)",
+        name_or_title="Legal Services Unit",
+        role_or_function=(
+            "Unit within the Office of the Council Secretary; provides "
+            "legal advice and safeguards the Council's interests. Headed "
+            "by a Council Advocate, assisted by 2 Senior Legal Assistants"
+        ),
         ward="N/A",
         date="N/A",
-        source_url=MIS_LAUNCH_URL,
+        source_url=INSTITUTIONAL_MGMT_URL,
+    ),
+    dict(
+        record_type="Department",
+        name_or_title="Procurement and Supplies Unit",
+        role_or_function=(
+            "Unit within the Office of the Council Secretary; procures "
+            "works, goods and services for value for money and efficient "
+            "use of Council resources"
+        ),
+        ward="N/A",
+        date="N/A",
+        source_url=INSTITUTIONAL_MGMT_URL,
+    ),
+    dict(
+        record_type="Department",
+        name_or_title="Public Relations Unit",
+        role_or_function=(
+            "Unit within the Office of the Council Secretary; informs the "
+            "public and enhances the Council's image"
+        ),
+        ward="N/A",
+        date="N/A",
+        source_url=INSTITUTIONAL_MGMT_URL,
+    ),
+    dict(
+        record_type="Department",
+        name_or_title="Internal Audit Unit",
+        role_or_function=(
+            "Unit within the Office of the Council Secretary; manages the "
+            "internal audit function and oversight of public resources"
+        ),
+        ward="N/A",
+        date="N/A",
+        source_url=INSTITUTIONAL_MGMT_URL,
+    ),
+    dict(
+        record_type="Department",
+        name_or_title="Information and Communication Technology (ICT) Unit",
+        role_or_function=(
+            "Unit within the Office of the Council Secretary; manages and "
+            "supports the Council's technology systems"
+        ),
+        ward="N/A",
+        date="N/A",
+        source_url=INSTITUTIONAL_MGMT_URL,
     ),
 
     # --- 3. Ward / Councillor --------------------------------------------
@@ -288,7 +337,7 @@ RECORDS = [
             "for Work (R-CFW) Programme"
         ),
         ward="All 20 wards",
-        date="N/A",
+        date="2026-06-16",
         source_url=RCFW_URL,
     ),
     dict(
@@ -300,7 +349,7 @@ RECORDS = [
             "in response to the 2023/2024 drought"
         ),
         ward="All 20 wards",
-        date="N/A",
+        date="2026-06-16",
         source_url=RCFW_URL,
     ),
     dict(
@@ -311,7 +360,7 @@ RECORDS = [
             "CWACs, SDMCs and councillors under the R-CFW Programme"
         ),
         ward="All 20 wards",
-        date="N/A",
+        date="2026-06-16",
         source_url=RCFW_URL,
     ),
 
