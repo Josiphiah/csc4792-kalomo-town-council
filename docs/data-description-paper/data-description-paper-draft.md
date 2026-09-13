@@ -124,7 +124,7 @@ Known limitations, documented rather than concealed:
 
 # CRediT author statement
 
-**[TODO — confirm final wording with each teammate before submission]**
+
 
 - **Louis:** Scraping and cleaning — CDF and community-project data.
 - **Faiz:** Scraping and cleaning — financial and revenue data.
