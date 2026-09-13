@@ -2,8 +2,8 @@
 > All four datasets are now complete and documented below, including Louis's
 > reworked CDF dataset (488 rows, full schema). The financial dictionary has
 > also been reconciled back into the single shared `docs/DATA_DICTIONARY.md`.
-> Remaining before final submission: confirm the CRediT author statement
-> wording with each teammate, then paste this content into the official
+> The CRediT author statement has been confirmed by all five authors.
+> Remaining before final submission: paste this content into the official
 > Elsevier Data in Brief Word/LaTeX template downloaded from
 > https://www.elsevier.com/dib-template (a JS-rendered page; the template
 > file itself must be downloaded manually via a browser — it could not be
@@ -124,13 +124,13 @@ Known limitations, documented rather than concealed:
 
 # CRediT author statement
 
+*(Confirmed by each author, 2026-09-13.)*
 
-
-- **Louis:** Scraping and cleaning — CDF and community-project data.
-- **Faiz:** Scraping and cleaning — financial and revenue data.
-- **Nicholas:** Scraping and cleaning — administrative and governance data.
-- **Josiphiah Simbaya:** Scraping and cleaning — development plans data; Writing – original draft (Data in Brief paper); notebook documentation for the development-plans dataset.
-- **Goodson:** Project coordination and repository setup; data dictionary; data integration and validation; Kaggle dataset publication.
+- **Louis:** Data curation, Software, Investigation — built the CDF projects scraping pipeline and OCR-based cleaning script (EasyOCR + pypdfium2 table extraction from 4 scanned council PDFs); produced the final 488-record CDF dataset; notebook documentation (`cdf_projects.ipynb`).
+- **Faiz:** Data curation, Software, Investigation — built the financial/revenue data scraping and cleaning scripts and the 18-row financial dataset; notebook documentation; reconciled the financial data dictionary into the single shared `DATA_DICTIONARY.md`.
+- **Nicholas:** Data curation, Software, Investigation — built the administrative/governance dataset (88 records): leadership, full ward roster (20/20 wards), department directory, committees, chiefdoms, constituencies; added meeting resolutions, committees, and reports from uploaded scanned minutes.
+- **Josiphiah Simbaya:** Data curation, Software, Investigation, Methodology, Validation, Writing – original draft — built the development plans dataset and its scraping/cleaning scripts; wrote the Data in Brief paper draft (Abstract, Specifications Table, all four Data Description sections); built and re-executed the master notebook (`00_master_notebook.ipynb`) merging all four datasets.
+- **Goodson:** Project administration, Data curation, Resources — scaffolded the repository structure; merged the finished CDF notebook into the master notebook; wrote the paper's CDF Data Description section, Kaggle link, and references; published the dataset to Kaggle.
 
 # References
 
