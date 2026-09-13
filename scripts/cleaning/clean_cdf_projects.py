@@ -12,7 +12,7 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 
-# Input and output locations used by the normal project workflow.
+# Use these paths unless they are overridden on the command line.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_INPUTS = (
     PROJECT_ROOT / "data" / "raw" / "cdf_projects" / "raw_cdf_projects.csv",
@@ -30,7 +30,7 @@ SOURCE_URLS = {
     "Kalomo Central": "https://www.kalomocouncil.gov.zm/?page_id=3020",
 }
 
-# Use one complete source per constituency and year to avoid duplicate projects.
+# Each entry is one complete list for a constituency and year.
 SOURCES = {
     "CDF-DUNDUMWEZI-2024.pdf": ("Dundumwezi", "2024", "approved_2024"),
     "CDF-KALOMO-CENTRAL-2024.pdf": ("Kalomo Central", "2024", "approved_2024"),
@@ -46,7 +46,7 @@ SOURCES = {
     ),
 }
 
-# Expected labels make it possible to correct small OCR spelling errors.
+# Known labels help match ward and sector names affected by OCR errors.
 WARDS = (
     "All Wards",
     "Bbilili",
@@ -91,7 +91,7 @@ SECTORS = (
     "Water Resources",
 )
 
-# Table headings are removed before project names are assembled.
+# These headings must not become part of a project name.
 HEADER_FRAGMENTS = {
     "comments",
     "name of project",
@@ -106,7 +106,7 @@ HEADER_FRAGMENTS = {
     "ward",
 }
 
-# Rejection reasons belong to the source row, not the project name.
+# These rejection reasons must not become part of a project name.
 REASON_FRAGMENTS = (
     "insufficient funds",
     "insufficeent funds",
@@ -135,7 +135,7 @@ DESCRIPTION_STARTS = (
     "supply",
 )
 
-# Final column order required by the data dictionary.
+# Keep the output columns in the order set by the data dictionary.
 OUTPUT_COLUMNS = (
     "project_id",
     "project_name",
@@ -150,7 +150,7 @@ OUTPUT_COLUMNS = (
 )
 
 
-# One OCR fragment and its position on the PDF page.
+# Store each OCR fragment with its position on the page.
 @dataclass
 class OCRLine:
     text: str
@@ -163,11 +163,11 @@ class OCRLine:
 
     @property
     def y_center(self) -> float:
-        # The centre is more stable than either edge when aligning table rows.
+        # The centre gives a consistent point for matching fragments to rows.
         return (self.y_min + self.y_max) / 2
 
 
-# Basic text cleanup used by the matching functions below.
+# Normalise OCR text before comparing labels.
 def normalized(value: str) -> str:
     value = value.upper().replace("|", "I")
     value = re.sub(r"[^A-Z0-9&'()/-]+", " ", value)
@@ -180,7 +180,7 @@ def compact(value: str) -> str:
 
 def fuzzy_choice(value: str, choices: tuple[str, ...], threshold: float = 0.76) -> str | None:
     """Match noisy OCR text to the closest expected label."""
-    # Keep the highest-scoring label if it meets the confidence threshold.
+    # Return the closest label only when the score is high enough.
     needle = normalized(value)
     best: tuple[float, str] = (0.0, "")
     for choice in choices:
@@ -191,7 +191,7 @@ def fuzzy_choice(value: str, choices: tuple[str, ...], threshold: float = 0.76) 
 
 
 def classify_status(value: str) -> str | None:
-    # Try exact text first, followed by common OCR spelling errors.
+    # Check exact text before allowing for OCR spelling errors.
     token = compact(value)
     if token == "APPROVED":
         return "Approved"
@@ -201,7 +201,7 @@ def classify_status(value: str) -> str | None:
         return "Approved"
     if "APPROVED" not in token:
         return None
-    # Common OCR variations of "NOT" still mean the project was rejected.
+    # OCR sometimes misreads the word "NOT" before "APPROVED".
     prefix = token.removesuffix("APPROVED")
     if prefix and SequenceMatcher(None, prefix[-4:], "NOT").ratio() >= 0.55:
         return "Not Approved"
@@ -224,7 +224,7 @@ def clean_fragment(value: str) -> str:
 
 
 def is_noise(value: str) -> bool:
-    # Drop headings, row numbers, stamps and council letterhead text.
+    # Remove headings, row numbers, stamps and council letterhead text.
     n = normalized(value).lower()
     if not n or n in HEADER_FRAGMENTS:
         return True
@@ -269,7 +269,7 @@ def find_ward(lines: list[str]) -> tuple[str, int | None]:
 
 def classify_sector(value: str) -> str | None:
     """Return a standard sector name when the OCR text is recognisable."""
-    # Exact aliases cover the most frequent spelling mistakes in the PDFs.
+    # Handle the sector spellings that appeared most often in the OCR output.
     n = normalized(value)
     token = compact(value)
     aliases = {
@@ -287,7 +287,7 @@ def classify_sector(value: str) -> str | None:
     for sector in SECTORS:
         if n == normalized(sector):
             return sector
-    # Handle sector names that were joined to nearby text or badly misread.
+    # Check partial words when OCR joined a sector to nearby text.
     compact_markers = (
         ("TRADITIONALAFFA", "Traditional Affairs"),
         ("ROADINFRA", "Road Infrastructure"),
@@ -325,7 +325,7 @@ def find_sector(lines: list[str], stop: int | None = None) -> tuple[str, int | N
 
 
 def choose_project_name(lines: list[str], sector_index: int | None) -> str:
-    # Keep the text before the sector and remove headings and rejection reasons.
+    # Project names appear before the sector in the older row format.
     candidates = lines[:sector_index] if sector_index is not None else lines
     candidates = [clean_fragment(x) for x in candidates]
     candidates = [x for x in candidates if x and not is_noise(x)]
@@ -406,7 +406,7 @@ def name_row_bounds_from_serial(
     if not serials:
         return None
 
-    # Use the row number nearest to the approval-status box.
+    # Match the approval status with the nearest row number.
     nearest_index = min(
         range(len(serials)),
         key=lambda index: abs(serials[index].y_center - anchor.y_center),
@@ -414,7 +414,7 @@ def name_row_bounds_from_serial(
     nearest = serials[nearest_index]
     if abs(nearest.y_center - anchor.y_center) > 20:
         return None
-    # Neighbouring row numbers provide tighter top and bottom boundaries.
+    # Use neighbouring row numbers as the row boundaries when possible.
     lower = nearest.y_center - 45
     upper = nearest.y_center + 45
     if nearest_index:
@@ -443,7 +443,7 @@ def project_name_from_cell(lines: list[OCRLine], name_right: float | None = None
             )
             if merged_description:
                 value = value[: merged_description.start()].strip()
-        # Skip anything that cannot form part of a useful project name.
+        # Leave headings, reasons and status text out of the project name.
         n = normalized(value)
         if (
             not value
@@ -513,12 +513,12 @@ def spatial_record(
     all_row_lines: list[OCRLine] | None = None,
 ) -> dict[str, str]:
     """Build one output record from the reconstructed table cells."""
-    # Read the main name cell, then use the description only when it is blank.
+    # Use the description as a fallback when the name cell is blank.
     project_name = project_name_from_cell(name_lines, name_right)
     if not project_name and fallback_name_lines:
-        # A continued row may have only its description on the next page.
+        # Continued rows sometimes have only a description on the next page.
         project_name = project_name_from_cell(fallback_name_lines)
-    # Search the full row when a sector or ward crossed a column boundary.
+    # Search the full row if OCR placed a ward or sector outside its column.
     sector = sector_from_cell(sector_lines)
     if sector == "N/A" and all_row_lines:
         sector = sector_from_cell(all_row_lines)
@@ -569,14 +569,14 @@ def make_record(
 
 def parse_2024(lines: list[OCRLine], constituency: str, source_file: str) -> list[dict[str, str]]:
     """Rebuild 2024 records, using the sector column to locate each row."""
-    # Header positions show where the project, ward and sector columns begin.
+    # Use the headings to locate the project, ward and sector columns.
     width = max(line.x_max for line in lines)
     ward_x = median_x(lines, "WARD", 0.57 * width)
     sector_x = median_x(lines, "SECTOR", 0.77 * width)
     project_left = 0.10 * width
     records: list[dict[str, str]] = []
     for page_number in sorted({line.page_number for line in lines}):
-        # Sector values act as row anchors in the simpler 2024 table layout.
+        # A sector entry marks each row in the 2024 layout.
         page_lines = [line for line in lines if line.page_number == page_number]
         anchors = sorted(
             (
@@ -587,7 +587,7 @@ def parse_2024(lines: list[OCRLine], constituency: str, source_file: str) -> lis
             key=lambda line: line.y_center,
         )
         for index, anchor in enumerate(anchors):
-            # The sector text sits near the bottom border of each 2024 row.
+            # Sector text sits near the lower edge of each 2024 row.
             lower = anchors[index - 1].y_max if index else anchor.y_center - 180
             upper = anchor.y_max + 6
             records.append(
@@ -606,7 +606,7 @@ def parse_2024(lines: list[OCRLine], constituency: str, source_file: str) -> lis
 
 def parse_2025(lines: list[OCRLine], constituency: str, source_file: str) -> list[dict[str, str]]:
     """Rebuild 2025 records, using approval status to locate each row."""
-    # Find the horizontal position of each column from the repeated headings.
+    # Use repeated headings to locate each column.
     width = max(line.x_max for line in lines)
     description_x = median_x(
         lines,
@@ -620,7 +620,7 @@ def parse_2025(lines: list[OCRLine], constituency: str, source_file: str) -> lis
     project_left = 0.10 * width
     records: list[dict[str, str]] = []
     for page_number in sorted({line.page_number for line in lines}):
-        # Each approval-status box marks one project application row.
+        # An approval status marks each row in the 2025 layout.
         page_lines = [line for line in lines if line.page_number == page_number]
         anchors = sorted(
             (
@@ -631,12 +631,12 @@ def parse_2025(lines: list[OCRLine], constituency: str, source_file: str) -> lis
             key=lambda line: line.y_center,
         )
         for index, anchor in enumerate(anchors):
-            # Estimate this row's vertical range before reading its cells.
+            # Estimate the row's top and bottom before reading its cells.
             lower, upper = row_bounds(anchors, index)
             row_lines = [
                 line for line in page_lines if lower <= line.y_center < upper
             ]
-            # Dundumwezi row numbers help separate tightly packed names.
+            # Dundumwezi row numbers separate names that sit close together.
             name_lower, name_upper = lower, upper
             serial_bounds = (
                 name_row_bounds_from_serial(page_lines, anchor, width)
@@ -644,7 +644,7 @@ def parse_2025(lines: list[OCRLine], constituency: str, source_file: str) -> lis
                 else None
             )
             if serial_bounds:
-                # Row numbers help separate names that sit close together.
+                # Tighten the range to the neighbouring row numbers.
                 name_lower = max(serial_bounds[0], lower - 15)
                 name_upper = min(serial_bounds[1], upper + 3)
             # Read the name and description areas separately.
@@ -661,7 +661,7 @@ def parse_2025(lines: list[OCRLine], constituency: str, source_file: str) -> lis
             description_lines = lines_in_cell(
                 page_lines, lower, upper, description_x - 80, sector_x - 10
             )
-            # Combine the reconstructed cells into the final schema.
+            # Build one output record from the recovered cells.
             records.append(
                 spatial_record(
                     name_lines,
@@ -690,7 +690,7 @@ def load_ocr(path: Path) -> list[OCRLine]:
     with path.open(encoding="utf-8-sig", newline="") as stream:
         reader = csv.DictReader(stream)
 
-        # Coordinates are required to rebuild the original table layout.
+        # The cleaner cannot rebuild table rows without these coordinates.
         required = {
             "text_line",
             "source_file_name",
@@ -769,12 +769,12 @@ def clean_cdf_data(input_path: Path, output_path: Path) -> list[dict[str, str]]:
         if row.source_file_name in grouped:
             grouped[row.source_file_name].append(row)
 
-    # All four canonical PDFs must be present for a complete dataset.
+    # All four selected PDFs are required for the complete dataset.
     missing = [name for name, values in grouped.items() if not values]
     if missing:
         raise ValueError(f"Canonical project sources missing from OCR input: {missing}")
 
-    # Apply the parser that matches each year's table layout.
+    # Use the parser that matches the source table's year.
     records: list[dict[str, str]] = []
     for source_file, (constituency, _, parser_name) in SOURCES.items():
         source_lines = grouped[source_file]
@@ -783,11 +783,11 @@ def clean_cdf_data(input_path: Path, output_path: Path) -> list[dict[str, str]]:
         else:
             records.extend(parse_2025(source_lines, constituency, source_file))
 
-    # Keep repeated names because separate applications can share the same details.
+    # Keep repeated names because they can be separate applications.
     for index, record in enumerate(records, 1):
         record["project_id"] = f"CDF-{index:04d}"
 
-    # Validate first, then write the Kaggle-ready pipe-separated file.
+    # Check the records before writing the pipe-separated file.
     validate(records)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8", newline="") as stream:
@@ -799,7 +799,7 @@ def clean_cdf_data(input_path: Path, output_path: Path) -> list[dict[str, str]]:
 
 def main() -> None:
     """Read command-line paths and run the cleaning process."""
-    # Optional paths allow testing without changing the standard locations.
+    # Optional paths are useful for local tests and Colab runs.
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", help="OCR CSV path (defaults to standard path, then legacy root file)")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT), help="Processed pipe-delimited CSV path")

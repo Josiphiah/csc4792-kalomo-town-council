@@ -7,12 +7,12 @@ import csv
 from pathlib import Path
 
 
-# Default locations used when no command-line paths are supplied.
+# Use these paths unless they are overridden on the command line.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_PDF_DIR = PROJECT_ROOT / "Dataset"
 DEFAULT_OUTPUT = PROJECT_ROOT / "data" / "raw" / "cdf_projects" / "raw_cdf_projects.csv"
 
-# These four files contain the complete project lists without repeating data.
+# These four combined lists cover both constituencies without duplicate sources.
 CANONICAL_PROJECT_PDFS = (
     "CDF-DUNDUMWEZI-2024.pdf",
     "CDF-KALOMO-CENTRAL-2024.pdf",
@@ -20,7 +20,7 @@ CANONICAL_PROJECT_PDFS = (
     "2025-KALOMO-CENTRAL-NOT-APPROVED-AND-APPROVED-PROJECTS.pdf",
 )
 
-# Columns saved for each OCR text box.
+# Save the text, page, position and confidence for each OCR result.
 OUTPUT_COLUMNS = (
     "text_line",
     "source_file_name",
@@ -35,7 +35,7 @@ OUTPUT_COLUMNS = (
 
 def extract_scanned_pdf_data(pdf_dir: Path, output_file: Path, gpu: bool) -> int:
     """Run OCR on the selected PDFs and save every detected text fragment."""
-    # Import OCR packages here so the script can show a clear setup error.
+    # Load OCR packages only when extraction starts.
     try:
         import easyocr
         import numpy as np
@@ -46,27 +46,27 @@ def extract_scanned_pdf_data(pdf_dir: Path, output_file: Path, gpu: bool) -> int
             "pypdfium2 in the environment used for extraction."
         ) from exc
 
-    # Check all source files before starting the slower OCR work.
+    # Stop early if any selected PDF is missing.
     missing = [name for name in CANONICAL_PROJECT_PDFS if not (pdf_dir / name).exists()]
     if missing:
-        raise FileNotFoundError(f"Missing canonical CDF project PDFs: {missing}")
+        raise FileNotFoundError(f"Missing selected CDF project PDFs: {missing}")
 
-    print(f"Initializing EasyOCR (GPU={gpu})...")
+    print(f"Initializing EasyOCR (GPU={gpu})")
     reader = easyocr.Reader(["en"], gpu=gpu)
     extracted: list[dict[str, object]] = []
 
-    # OCR each page and keep the position of every detected text box.
+    # OCR one page at a time and keep each text box's position.
     for file_name in CANONICAL_PROJECT_PDFS:
         file_path = pdf_dir / file_name
         print(f"Processing {file_name}")
         pdf = pdfium.PdfDocument(str(file_path))
         try:
             for page_index, page in enumerate(pdf):
-                # Render at 300 DPI to make small table text easier to read.
+                # The higher resolution helps EasyOCR read small table text.
                 image = page.render(scale=300 / 72).to_pil()
                 results = reader.readtext(np.asarray(image), detail=1, paragraph=False)
                 for box, text, confidence in results:
-                    # Ignore empty detections and keep the box coordinates.
+                    # Skip empty detections.
                     cleaned = str(text).strip()
                     if not cleaned:
                         continue
@@ -87,7 +87,7 @@ def extract_scanned_pdf_data(pdf_dir: Path, output_file: Path, gpu: bool) -> int
         finally:
             pdf.close()
 
-    # Store the fragments in page order so the cleaning step is repeatable.
+    # Keep the fragments in their original reading order.
     extracted.sort(
         key=lambda row: (
             str(row["source_file_name"]),
@@ -97,7 +97,7 @@ def extract_scanned_pdf_data(pdf_dir: Path, output_file: Path, gpu: bool) -> int
         )
     )
 
-    # Write one CSV row for every detected fragment.
+    # Each OCR text box becomes one row in the raw CSV.
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with output_file.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=OUTPUT_COLUMNS)
@@ -110,7 +110,7 @@ def extract_scanned_pdf_data(pdf_dir: Path, output_file: Path, gpu: bool) -> int
 
 def main() -> None:
     """Read command-line options and start the OCR extraction."""
-    # Command-line paths make the same script usable locally and in Colab.
+    # Path options allow the same script to run locally or in Colab.
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pdf-dir", default=str(DEFAULT_PDF_DIR))
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
