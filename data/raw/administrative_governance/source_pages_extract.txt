@@ -1,18 +1,18 @@
 SOURCE PAGE EXTRACTS - Kalomo Town Council administrative/governance dataset
 Collected by: Nicholas
-Method: scripts/scraping/scrape_administrative_governance.py targets these
-exact pages on https://www.kalomocouncil.gov.zm/. The council site blocks
-automated/agent HTTP clients (returns 403 to a plain requests.get from this
-environment, and is robots-disallowed for hosted fetch tools), so the
-running notes below were compiled by cross-referencing indexed copies of
-each page's rendered text (the same pages the script targets) together with
-the council's own news posts, which are separately indexed and were fully
-readable. This mirrors the approach already used for the scanned/rotated
-PDFs in data/raw/development_plans (documented from listing/context rather
-than full text) - content is recorded honestly per source, with gaps noted
-rather than invented. Running the script from a normal residential/campus
-connection (as teammates' scripts do for their datasets) should retrieve
-full HTML directly; that raw HTML would land in this same folder.
+
+These notes record the source material used for the administrative and
+governance dataset. The scraper targets the same Kalomo Town Council pages
+listed below, but this working environment could not fetch the live site
+reliably: direct automated requests returned HTTP 403, and hosted fetch tools
+honour the site's robots.txt restrictions.
+
+To keep the dataset verifiable, I compiled these notes from indexed copies of
+the same pages, readable council news posts, and direct browser checks of the
+live site where indexed text was incomplete. I have kept uncertainty visible:
+if a page did not expose a detail clearly, the gap is noted here instead of
+being filled from guesswork. Running the scraper from a normal campus or home
+connection should still save the full HTML and extracted text into this folder.
 
 ------------------------------------------------------------------
 PAGE: About Us (https://www.kalomocouncil.gov.zm/?page_id=118)
@@ -37,7 +37,7 @@ Wards. Comprises 3 Chiefdoms (Chikanta, Siachitema, Sipatunyana) and 2
 Constituencies (Kalomo Central, Dundumwezi).
 
 ------------------------------------------------------------------
-PAGE: CIVIC LEADERS (https://www.kalomocouncil.gov.zm/?page_id=2871)
+PAGE: Civic Leaders (https://www.kalomocouncil.gov.zm/?page_id=2871)
 ------------------------------------------------------------------
 Page is structured by the two constituencies (Dundumwezi Constituency,
 Kalomo Central Constituency) and lists ward councillors under each. Only
@@ -48,9 +48,10 @@ text alone; the script should be re-run from an unrestricted connection to
 capture the complete list.
 
 ------------------------------------------------------------------
-UPDATE (full Civic Leaders roster, supplied by Nicholas from a direct
-browser view of https://www.kalomocouncil.gov.zm/?page_id=2871 on
-2026-09-11 - the JS-rendered tab content that indexed snapshots missed)
+UPDATE: full Civic Leaders roster
+Source: direct browser view of https://www.kalomocouncil.gov.zm/?page_id=2871
+checked by Nicholas on 2026-09-11. This captured the tabbed page content that
+indexed snapshots missed.
 ------------------------------------------------------------------
 Council Chairperson: Coy Makaya (not tied to a single ward).
 Vice Council Chairperson: Valencia Simwale - also serves as the Naluja
@@ -93,10 +94,11 @@ KALOMO CENTRAL CONSTITUENCY (12 wards):
   Mwaata      - Sialwizi S. Madyenkuku (previously the only entry we had)
 
 ------------------------------------------------------------------
-UPDATE (site-wide contact footer, supplied by Nicholas from a direct
-browser view on 2026-09-11 - appears identically on every page, incl.
-Departments, so it doesn't resolve the Departments gap below, but is
-genuine council contact information worth keeping)
+UPDATE: site-wide contact footer
+Source: direct browser view checked by Nicholas on 2026-09-11. This footer
+appears across the site, including the Departments page, so it does not by
+itself confirm the department listing. It is still genuine council contact
+information and is useful as one contact record.
 ------------------------------------------------------------------
 Email: towncouncilkalomo@gmail.com
 Address: 128 Independence Avenue, Kalomo Town Council along T1
@@ -128,10 +130,10 @@ Human Resource, Procurement - these are typical departments at comparable
 Zambian town councils (see e.g. Kalabo/Kalumbila council pages) but are
 NOT included as Kalomo-specific rows below without direct confirmation.
 
-Attempt #2 (2026-09-11): a direct browser paste of this page from Nicholas
-returned only the site-wide footer (contact email/address/P.O. Box/office
-hours/Quick Links - see UPDATE block above), which is identical across
-every page on the site, not this page's own department listing. The
+Attempt #2 (2026-09-11): Nicholas pasted this page directly from a browser,
+but it returned only the site-wide footer (contact email/address/P.O. Box/
+office hours/Quick Links - see UPDATE block above), which is identical
+across every page on the site, not this page's own department listing. The
 Departments page's body content still hasn't been captured directly, but
 see Attempt #3 below, which found the same information via the site's own
 search feature instead.
@@ -181,9 +183,9 @@ structured on comparable council sites, it likely names every
 department/unit and its head in one place.
 
 ------------------------------------------------------------------
-UPDATE (full Institutional Management page body, supplied by Nicholas
-from a direct browser view on 2026-09-11 - this is the complete page,
-resolving the department-directory gap noted above)
+UPDATE: full Institutional Management page body
+Source: direct browser view checked by Nicholas on 2026-09-11. This is
+the complete page, resolving the department-directory gap noted above.
 ------------------------------------------------------------------
 Confirms Trophius Kufanga, Office of the Council Secretary (as already
 logged from the MIS-launch article and the earlier partial snippet).
