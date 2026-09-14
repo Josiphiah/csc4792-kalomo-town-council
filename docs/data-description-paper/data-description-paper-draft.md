@@ -1,15 +1,3 @@
-> **STATUS OF THIS DRAFT (remove before final submission), updated 2026-09-13:**
-> All four datasets are now complete and documented below, including Louis's
-> reworked CDF dataset (488 rows, full schema). The financial dictionary has
-> also been reconciled back into the single shared `docs/DATA_DICTIONARY.md`.
-> The CRediT author statement has been confirmed by all five authors.
-> Remaining before final submission: paste this content into the official
-> Elsevier Data in Brief Word/LaTeX template downloaded from
-> https://www.elsevier.com/dib-template (a JS-rendered page; the template
-> file itself must be downloaded manually via a browser — it could not be
-> fetched automatically) and re-check formatting against the guide for
-> authors: https://www.sciencedirect.com/journal/data-in-brief/publish/guide-for-authors
-
 # Title
 
 A Dataset of Constituency Development Fund (CDF) Projects, Council Finances, Governance Structures, and Development Plans for Kalomo Town Council, Zambia
